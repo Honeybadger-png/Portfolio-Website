@@ -12,6 +12,7 @@
 
 body{
   height: 100%;
+  background-color: #010b19;
 }
 
 #root,.app,.content{
