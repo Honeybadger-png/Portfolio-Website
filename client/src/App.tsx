@@ -1,14 +1,16 @@
-import { Outlet } from 'react-router-dom'
-import Navbar from './Components/Navigation/navbar'
+import { Outlet, Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 
 
 export default function App() {
 
   return (
     <>
-      <Navbar />
-      <Outlet/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
     </>
+    
   )
 }
 

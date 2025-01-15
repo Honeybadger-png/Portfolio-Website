@@ -1,3 +1,6 @@
+import Navbar from "../Components/Navigation/navbar";
+
+
 interface Props{
 
 }
@@ -5,8 +8,11 @@ interface Props{
 const Home = (props: Props) => {
   return (
     <>
-      <div>
-        <h1>Welcome to my website</h1>
+      <div className="">
+        <div>
+          <Navbar/>
+        </div>
+        <h1>welcome to my site</h1>
       </div>
     </>
   )
