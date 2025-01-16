@@ -10,18 +10,20 @@ const Navbar = () => {
   return (
     <>
     <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color">
-      <div className="flex flex-row justify-between w-full h-full p-2 border-b-[1px]  border-indigo-50">
-        <div className="flex flex-row content-center border-indigo-50 justify-start">
+      <div className="flex flex-row justify-between w-full h-full p-4 border-b-[1px]  border-indigo-50">
+        <div className="flex flex-row  border-indigo-50 justify-center">
           {/* Logo */}
-          <div className="content-center">
+          <div className="content-center pl-2">
             <h1>Logo</h1>
           </div>
-          <div className=" content-center">
-            <h1>Title</h1>
+          <div className="content-center text-[3vh] pl-2">
+            |
+          </div>
+          <div className=" content-center pl-2 text-[3vh]">
+            <h1>Mert Gül</h1>
           </div>
         </div>
         <div className="flex justify-start content-center">
-          <h1>empty</h1>
         </div>
         <div className="flex justify-center  items-center">
           <ul className="list-none hidden sm:flex  flex-row gap-10">
