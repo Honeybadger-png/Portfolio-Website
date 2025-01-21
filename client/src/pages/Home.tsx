@@ -1,5 +1,5 @@
-import Hero from "../Components/Hero/Hero";
 import Navbar from "../Components/Navigation/Navbar";
+import Hero from "../Components/Hero/Hero";
 import { styles } from "../styles";
 
 
