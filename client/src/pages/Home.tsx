@@ -5,11 +5,10 @@ import { styles } from "../styles";
 
 
 const Home = () => {
-  const {APP_STATUS} = process.env;
 
   return (
     <>
-    {APP_STATUS === "development" ? <div className="">
+      <div className="">
         <div>
           <Navbar/>
         </div>
@@ -17,10 +16,7 @@ const Home = () => {
         <div className={`${styles.marginHome}`}>
           <Hero/>
         </div>
-      </div>: <div>
-      <h1>Under Construction</h1>
-    </div> }
-      
+      </div>
     </>
   )
 }
