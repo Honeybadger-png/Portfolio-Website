@@ -2,9 +2,7 @@
 import './index.css'
 
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, RouterProvider } from 'react-router-dom'
-import React from 'react'
-import { router } from './Routes/Routes.tsx'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App.tsx'
 
 const root = ReactDOM.createRoot(

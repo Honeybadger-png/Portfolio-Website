@@ -4,7 +4,6 @@ import { useState } from "react";
 
 
 const Navbar = () => {
-  const [active, setActivate] = useState("");
   const [toggle, setToggle] = useState(true);
 
   return (

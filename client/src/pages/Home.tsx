@@ -3,11 +3,8 @@ import Navbar from "../Components/Navigation/Navbar";
 import { styles } from "../styles";
 
 
-interface Props{
 
-}
-
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <>
       <div className="">
@@ -15,7 +12,7 @@ const Home = (props: Props) => {
           <Navbar/>
         </div>
         {/* there will be background image for hero sections */}
-        <div className={`${styles.marginHome} bg-white`}>
+        <div className={`${styles.marginHome}`}>
           <Hero/>
         </div>
       </div>
