@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { styles } from "../../styles";
+import DeskCanvas from "../Canvas/Desk";
 
 const Hero = () =>{
   const Titles = [
@@ -35,6 +36,7 @@ const Hero = () =>{
             <motion.p animate={{x:50,scale:[1,1,1,1,1.5]}} transition={{ease:"easeOut",duration:1.5}} >3D Artist</motion.p> */}
           </div>
         </div>
+        <DeskCanvas/>
       </div>
     </section>
   )
