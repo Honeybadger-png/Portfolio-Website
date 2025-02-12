@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.deneme {
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(logo/Logo.svg);
+    background-size: cover;
+    width: 880px;
+    height: 800px;
+    position: relative;
+    float: left;
+}
+
+.deneme h1 {
+    font-family: 'Audiowide', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 3rem;
+}
+
+.socials {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 85%;
+    left: 10%;
+}

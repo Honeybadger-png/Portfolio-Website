@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        audiowide: ["Audiowide","serif"]
+      },
       colors:{
         'primary' : '#190021',
         'secondary' : '#5e0c8f',
