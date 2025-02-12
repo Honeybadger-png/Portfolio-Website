@@ -10,7 +10,7 @@
     position: relative;
 }
 
-.deneme h1 {
+.background-logo h1 {
     font-family: 'Audiowide', serif;
     font-weight: 900;
     text-transform: uppercase;
@@ -23,8 +23,6 @@
 
 .socials {
     position: absolute;
-    width: 100px;
-    height: 100px;
     top: 85%;
     left: 10%;
 }
