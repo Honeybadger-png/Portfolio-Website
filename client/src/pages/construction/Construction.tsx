@@ -15,7 +15,8 @@ const Construction = () => {
 
   return (
   <>
-    <div className="relative h-screen content-center items-end justify-items-center  text-gray-50">
+  <div className="background-logo">
+    <div className="relative h-screen w-screen content-center items-end justify-items-center  text-gray-50">
       <div className=" relative center">
           <div className="deneme">
             <h1 >Coming Soon</h1>
@@ -37,6 +38,7 @@ const Construction = () => {
         </IconContext.Provider>  
       </div>
     </div>
+  </div>
 
   </>
   )
