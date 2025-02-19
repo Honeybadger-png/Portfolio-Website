@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Construction from './pages/construction/Construction'
+import Loading from './Components/Loading/Loading'
 
 
 
@@ -11,7 +12,7 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={APP_STATUS === "development" ? <Home/> : <Construction/>} />
+        <Route  path='/' element={APP_STATUS === "development" ? <Home/> : <Construction/>}  />
       </Routes>
     </>
     
