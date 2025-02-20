@@ -12,8 +12,8 @@ const Navbar = () => {
       <div className="flex flex-row justify-between w-full h-full p-4 border-b-[1px]  border-indigo-50">
         <div className="flex flex-row  border-indigo-50 justify-center">
           {/* Logo */}
-          <div className="content-center pl-2">
-            <h1>Logo</h1>
+          <div className="h-[8vh] w-auto content-center justify-center items-center pl-2">
+            <img className="h-full" src="/logo/Logo_v2.svg" alt="" />
           </div>
           <div className="content-center text-[3vh] pl-2">
             |

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "../Components/Navigation/navbar";
 import Hero from "../Components/Hero/Hero";
 import { styles } from "../styles";
-import Loading from "../Components/Loading/Loading";
+
 
 
 
@@ -20,7 +20,7 @@ const Home = () => {
 
   return (
     <>
-    {!loading ? <Loading/> : <div className="">
+      <div className="">
         <div>
           <Navbar/>
         </div>
@@ -28,7 +28,7 @@ const Home = () => {
         <div className={`${styles.marginHome}`}>
           <Hero/>
         </div>
-      </div> }
+      </div> 
       
     </>
   )

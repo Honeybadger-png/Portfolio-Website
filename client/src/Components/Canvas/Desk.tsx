@@ -1,7 +1,7 @@
-import { Suspense,useEffect,useState } from "react";
+import { Suspense } from "react";
 import {Canvas} from '@react-three/fiber';
 import { OrbitControls,Preload,useGLTF} from '@react-three/drei';
-
+import Loader from '../Loader/Loader'
 
 const Desk = ()=> {
   const desk = useGLTF('./my_desk_view/Desk.gltf')
@@ -23,7 +23,7 @@ const Desk = ()=> {
 const DeskCanvas = ()=>{
   return (
     <Canvas frameloop="demand" shadows camera={{position:[-0.1,1,1],fov:25}} gl={{preserveDrawingBuffer:true}}>
-      <Suspense>
+      <Suspense fallback={<Loader/>}>
         <OrbitControls enableZoom={true} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}/>
         <Desk />
       </Suspense>
