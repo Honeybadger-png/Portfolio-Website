@@ -24,13 +24,15 @@ const Hero = () =>{
   },[change]);
 
   return(
-    <section className="relative h-screen " >
+    <section className="h-[80vh]" >
       <div className={`${styles.paddinX}${styles.paddingY} `}>
-        <div className="justify-center">
+        <div className="h-full justify-center">
           <h1 className={`${styles.heroHeadText} text-center`}>
             Hi, I am<span className="text-primary">Mert</span>
           </h1>
-          <DeskCanvas/>
+          <div className="h-[50vh]">
+            <DeskCanvas/>
+          </div>
           <div className={`${styles.heroSubText} justify-center mt-2 text-cyber-orange flex flex-row`}>
            {`{${Titles[change].title}}`}
             {/* {change ? <motion.p animate={{opacity:1,scale:1}} transition={{duration:"0.5"}} initial={{opacity:0,scale:0.5}}>Full Stack Developer</motion.p> : 

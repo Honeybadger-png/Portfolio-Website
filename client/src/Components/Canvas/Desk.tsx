@@ -9,11 +9,11 @@ const Desk = ()=> {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
+      <pointLight intensity={100} />
       <primitive 
         object={desk.scene} 
-        scale={2}
-        position={[0,-3,5]}  />
+        scale={4}
+        position={[1,-5,-10]}  />
     </mesh>
   )
 }
@@ -22,7 +22,7 @@ const Desk = ()=> {
 
 const DeskCanvas = ()=>{
   return (
-    <Canvas frameloop="demand" shadows camera={{position:[0,0,0],fov:25}} gl={{preserveDrawingBuffer:true}}>
+    <Canvas frameloop="demand" shadows camera={{position:[-0.1,1,1],fov:25}} gl={{preserveDrawingBuffer:true}}>
       <Suspense>
         <OrbitControls enableZoom={true} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}/>
         <Desk />
