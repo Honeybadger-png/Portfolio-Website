@@ -4,7 +4,7 @@ import { OrbitControls,Preload,useGLTF} from '@react-three/drei';
 import Loader from '../Loader/Loader'
 
 const Desk = ()=> {
-  const desk = useGLTF('./my_desk_view/Desk.gltf')
+  const desk = useGLTF('./my_desk_view/desk.gltf')
 
   return (
     <mesh>
@@ -13,7 +13,9 @@ const Desk = ()=> {
       <primitive 
         object={desk.scene} 
         scale={4}
-        position={[1,-5,-10]}  />
+        position={[1,-5,0]}
+          
+      />
     </mesh>
   )
 }
@@ -22,7 +24,7 @@ const Desk = ()=> {
 
 const DeskCanvas = ()=>{
   return (
-    <Canvas frameloop="demand" shadows camera={{position:[-0.1,1,1],fov:25}} gl={{preserveDrawingBuffer:true}}>
+    <Canvas frameloop="demand" shadows camera={{position:[1,-10,10],fov:25}} gl={{preserveDrawingBuffer:true}}>
       <Suspense fallback={<Loader/>}>
         <OrbitControls enableZoom={true} maxPolarAngle={Math.PI/2} minPolarAngle={Math.PI/2}/>
         <Desk />

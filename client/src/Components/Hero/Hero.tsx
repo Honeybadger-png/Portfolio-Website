@@ -36,9 +36,6 @@ const Hero = () =>{
           {`{HELLO}`}
         </div>
         <div className="h-full justify-center">
-          <h1 className={`${styles.heroHeadText} mb-2 text-center`}>
-            <span className="text-primary">MERT GUL</span>
-          </h1>
           <div className="h-[60vh] bg-[auto_80vh] bg-center bg-no-repeat bg-[url(/logo/Background_Image.svg)]">
             <DeskCanvas/>
           </div>
