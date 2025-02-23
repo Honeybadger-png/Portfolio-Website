@@ -2,7 +2,8 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Construction from './pages/construction/Construction'
-import Loading from './Components/Loading/Loading'
+import About from './pages/about/About'
+import Navbar from './Components/Navigation/navbar'
 
 
 
@@ -11,9 +12,13 @@ export default function App() {
 
   return (
     <>
+    <div>
+      <Navbar/>
       <Routes>
         <Route  path='/' element={APP_STATUS === "development" ? <Home/> : <Construction/>}  />
+        <Route  path='/about' element= {<About/>}  />
       </Routes>
+    </div>
     </>
     
   )

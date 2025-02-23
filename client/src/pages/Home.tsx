@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import Navbar from "../Components/Navigation/navbar";
 import Hero from "../Components/Hero/Hero";
 import { styles } from "../styles";
+import Introduction from "../Components/Introduction/Introduction";
 
 
 
@@ -20,13 +20,11 @@ const Home = () => {
 
   return (
     <>
-      <div className="">
-        <div>
-          <Navbar/>
-        </div>
+      <div className="text-text-light">
         {/* there will be background image for hero sections */}
         <div className={`${styles.marginHome}`}>
           <Hero/>
+          <Introduction/>
         </div>
       </div> 
       

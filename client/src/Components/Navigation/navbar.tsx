@@ -8,18 +8,18 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color">
-      <div className="flex flex-row justify-between w-full h-full border-b-[1px]  border-indigo-50">
+    <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color border-b-[1px]  border-indigo-50">
+      <div className="flex flex-row justify-between w-full h-full px-10 ">
         <div className="flex flex-row  border-indigo-50">
           {/* Logo */}
           <div className="h-full content-center justify-items-center pl-2">
             <img className="h-[80%]" src="/logo/Logo_v2.svg" alt="" />
           </div>
           <div className="text-[6vh] pl-2 content-center justify-items-center ">
-            <h1>|</h1>
+            <h2>|</h2>
           </div>
           <div className=" content-center pl-2 text-[4vh]">
-            <h1>MERT GUL</h1>
+            <h2>MERT GUL</h2>
           </div>
         </div>
         <div className="flex justify-start content-center">

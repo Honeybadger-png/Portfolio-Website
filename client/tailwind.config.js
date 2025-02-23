@@ -18,7 +18,7 @@ export default {
         'pure-black': '#000000',
         'dark-gray': '#121212',
         'text-soft': '#EAEAEA',
-        'text-light': '#CCCCCC',
+        'text-light': '#FFFFFF',
         'navbar-bg-color' : '#010b19',
         'navbar-txt-color' : '#FFFDF0'
       }
