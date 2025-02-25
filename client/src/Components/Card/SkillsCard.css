@@ -1,0 +1,11 @@
+.denemelik{
+    padding: 0.5em 1.5em;
+    height: 50vh;
+    border: 0;
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    background-color: red;
+    clip-path: url(#myClip)
+}
