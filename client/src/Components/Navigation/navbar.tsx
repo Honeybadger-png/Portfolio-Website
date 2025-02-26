@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
+import './navbar.css'
 
 
 const Navbar = () => {
@@ -8,8 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color border-b-[2px]  border-cyber-orange">
-      <div className="flex flex-row justify-between w-full h-full px-10 ">
+      <div className="flex flex-row h-[10vh] justify-between w-full px-10 border-b-2 border-red-600">
         <div className="flex flex-row">
           {/* Logo */}
           <div className="h-full content-center justify-items-center pl-2">
@@ -18,7 +18,7 @@ const Navbar = () => {
         </div>
         <div className="flex justify-start content-center">
         </div>
-        <div className="flex justify-center  items-center">
+        <nav className="navbox">
           <ul className="list-none hidden sm:flex  flex-row gap-10">
             <li className="text-secondary">
               <a href="">HOME</a>
@@ -33,7 +33,8 @@ const Navbar = () => {
               <a href="">CONTACT</a>
             </li>
           </ul>
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+        </nav>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
             <div className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={()=>setToggle(!toggle)}>
               { toggle ? <FontAwesomeIcon icon={faBars} /> :
               <FontAwesomeIcon icon={faXmark} />}
@@ -52,9 +53,7 @@ const Navbar = () => {
               </ul>
             </div> 
           </div>
-        </div>
       </div>
-    </nav>
     </>
   )
 }

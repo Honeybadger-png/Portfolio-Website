@@ -1,0 +1,49 @@
+
+
+.navbox{
+    --border-width: 0.20em;
+    --edge-size: 0.50em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em 1em;
+    position: relative;
+    clip-path: polygon(
+        var(--edge-size) 0%,
+        100% 0,
+        100% 100%,
+        0 100%,
+        0% var(--edge-size)
+    );
+    color: var(--secondary);
+}
+
+.navbox::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--cyber-orange);
+    z-index: -2;
+}
+
+.navbox::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--pure-black);
+    z-index: -1;
+    clip-path: polygon(
+
+    var(--border-width) calc(var(--edge-size) + var(--border-width) * 0.5),
+
+    calc(var(--edge-size) + var(--border-width) * 0.5) var(--border-width),
+
+    calc(100% - var(--border-width)) var(--border-width),
+
+    calc(100% - var(--border-width))
+      calc(100% - var(--border-width)),
+
+    calc(var(--border-width)) calc(100% - var(--border-width))
+  );
+}
