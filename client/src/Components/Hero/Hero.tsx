@@ -39,7 +39,6 @@ const Hero = () =>{
           <div className="h-[70vh]">
             <DeskCanvas/>
           </div>
-
         </div>
       </div>
     </section>

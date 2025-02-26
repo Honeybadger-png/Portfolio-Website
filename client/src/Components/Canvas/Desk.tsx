@@ -8,8 +8,9 @@ const Desk = ()=> {
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={100} />
+      <hemisphereLight intensity={2}  position={[1,5,4]} groundColor="black" />
+      <pointLight intensity={10} position={[-2,1,0]}/>
+      <spotLight position={[0,0,-4]} intensity={10} castShadow angle={Math.PI/3} />
       <primitive 
         object={desk.scene} 
         scale={4}

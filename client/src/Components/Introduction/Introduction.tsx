@@ -1,3 +1,4 @@
+import Fan from "../Canvas/Fan";
 import SkillsCard from "../Card/SkillsCard";
 import './Introduction.css';
 
@@ -18,9 +19,7 @@ const Introduction = ()=>{
                 </div>
             </div>
             <div className="right-introduction">
-                <div className="">
-                    <h1>Introduction</h1>
-                </div>
+                <Fan/>
             </div>
         </div>
         <div className="justify-items-center">

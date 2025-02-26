@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <>
-    <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color border-b-[1px]  border-indigo-50">
+    <nav className="w-full h-[10vh] bg-navbar-bg-color text-navbar-txt-color border-b-[2px]  border-cyber-orange">
       <div className="flex flex-row justify-between w-full h-full px-10 ">
         <div className="flex flex-row">
           {/* Logo */}
