@@ -1,4 +1,6 @@
 .denemelik{
+        --border-width: 0.25em;
+    --edge-size: 0.50em;
     padding: 0.5em 1.5em;
     height: 50vh;
     border: 0;
@@ -6,6 +8,49 @@
     isolation: isolate;
     display: inline-grid;
     place-content: center;
-    background-color: red;
-    clip-path: url(#myClip)
+    clip-path: polygon( 
+        100% 30%,
+    100% 100%,
+    75% 100%,
+    65% 80%,
+    65% 80%,
+    6.229% 80%,
+    0% 70%,
+    0% 0%,
+    30% 0%,
+    35% 10%,
+    35% 10%,
+    35% 10%,
+    90% 10%,
+    100% 30% );
 }
+.denemelik::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--cyber-orange);
+    z-index: -2;
+}
+
+/* .denemelik::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--pure-black);
+    z-index: -1;
+    clip-path: polygon( 99.923% 30.22%,
+    99.923% 99.799%,
+    74.316% 99.799%,
+    63.881% 81.076%,
+    63.859% 81.035%,
+    63.826% 81.035%,
+    6.229% 81.035%,
+    0.077% 69.997%,
+    0.077% 0.139%,
+    28.396% 0.139%,
+    35.344% 12.608%,
+    35.367% 12.649%,
+    35.399% 12.649%,
+    90.131% 12.649%,
+    99.923% 30.22% );
+} */

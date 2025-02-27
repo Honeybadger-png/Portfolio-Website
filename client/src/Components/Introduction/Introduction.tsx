@@ -25,9 +25,7 @@ const Introduction = ()=>{
         <div className="justify-items-center">
             <h1>SKILLS</h1>
         </div>
-        <div className="grid grid-cols-3 gap-4">
-            <SkillsCard/>
-            <SkillsCard/>
+        <div className="grid grid-cols-2 gap-4">
             <SkillsCard/>
             <SkillsCard/>
             <SkillsCard/>

@@ -18,22 +18,22 @@ const Navbar = () => {
         </div>
         <div className="flex justify-start content-center">
         </div>
-        <nav className="navbox">
-          <ul className="list-none hidden sm:flex  flex-row gap-10">
-            <li className="text-secondary">
+        <div className="menu">
+          <ul className="menu-list">
+            <li className="menu-item">
               <a href="">HOME</a>
             </li>
-            <li>
-              <a href="">PROJECTS</a>
-            </li>
-            <li>
+            <li className="menu-item">
               <a href="">ABOUT</a>
             </li>
-            <li>
+            <li className="menu-item">
+              <a href="">PROJECTS</a>
+            </li>
+            <li className="menu-item">
               <a href="">CONTACT</a>
             </li>
           </ul>
-        </nav>
+        </div>
         <div className="sm:hidden flex flex-1 justify-end items-center">
             <div className="w-[28px] h-[28px] object-contain cursor-pointer" onClick={()=>setToggle(!toggle)}>
               { toggle ? <FontAwesomeIcon icon={faBars} /> :
