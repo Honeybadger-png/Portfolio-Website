@@ -28,8 +28,8 @@ const Home = () => {
         <div className={`${styles.marginHome}`}>
           <Hero/>
           <Introduction/>
-          <Projects/>
           <Experience/>
+          <Projects/>
           <Contact/>
         </div>
       </div> 
