@@ -1,3 +1,4 @@
+import { styles } from "../../styles";
 import Fan from "../Canvas/Fan";
 import SkillsCard from "../Card/SkillsCard";
 import './Introduction.css';
@@ -22,14 +23,16 @@ const Introduction = ()=>{
                 <Fan/>
             </div>
         </div>
-        <div className="justify-items-center">
+        <div className={`justify-items-center ${styles.marginComponents}`}>
             <h1>SKILLS</h1>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-            <SkillsCard/>
-            <SkillsCard/>
-            <SkillsCard/>
-            <SkillsCard/>
+        <div className="h-[40vh] grid grid-flow-col grid-rows-2 gap-4">
+            <SkillsCard span="row-span-2" title="HTML&CSS" logo="HTML"/>
+            <SkillsCard span="row-span-1" title="Node" logo="Node"/>
+            <SkillsCard span="row-span-1" title="Blender" logo="Blender"/>
+            <SkillsCard span="row-span-1" title="Figma" logo="Figma"/>
+            <SkillsCard span="row-span-1" title="Next" logo="Next"/>
+            <SkillsCard span="row-span-2" title="React" logo="React"/>
         </div>
         </>
     )
