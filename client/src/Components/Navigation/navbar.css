@@ -28,11 +28,11 @@
 }
 
 .menu-item {
-  padding: 1em;
+  padding: 0em 1.5em 0em 1.5em;
 }
 
 .menu-item:hover {
-  background-color: aqua;
+  color: var(--accent);
 }
 .menu-item a {
   text-align: center;
