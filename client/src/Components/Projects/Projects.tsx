@@ -1,9 +1,13 @@
+import { AnimatePresence, motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { styles } from "../../styles"
 import "./Projects.css";
 
 
 
 const Projects = () =>{
+    const [hovered, setHovered] = useState(-1);
+
     return(
         <>
             <div className={`${styles.marginComponents} justify-items-center `}>
@@ -25,15 +29,30 @@ const Projects = () =>{
                     </div>
                 </div>
             </div>
-
-            <div className={`${styles.marginComponents} flex relative overflow-hidden h-[50vh]`}>
-                <div className=" flex">
-                    <div className="bg-red-500 w-[40vw]  ">deneme</div>
-                    <div className="bg-slate-400 w-[40vw] ">deneme</div>
-                    <div className="bg-red-500 w-[40vw] ">deneme</div>
-                    <div className="bg-red-500 w-[40vw] ">deneme</div>
+            <div className={`${styles.marginComponents} flex relative overflow-hidden h-[50vh] w-full`}>
+                <div className=" flex gap-2 w-full">
+                    <div className="w-[40%]  ">
+                        <motion.div className=" border-2 border-cyber-orange " whileHover={{x:50}} onHoverStart={()=>setHovered(0)} onHoverEnd={()=> setHovered(-1)}>
+                            <h3>First Project</h3>
+                        </motion.div>
+                        <motion.div className=" border-2 border-cyber-orange " whileHover={{x:50}} onHoverStart={()=>setHovered(1)} onHoverEnd={()=> setHovered(-1)}>
+                            <h3>First Project</h3>
+                        </motion.div>
+                    </div>
+                    <div className="w-[60%]">
+                        <motion.div className="border-2 h-[50vh]">
+                            <AnimatePresence>
+                                {
+                                    hovered !== -1 ? (
+                                        <div>
+                                            {hovered}
+                                        </div>
+                                    ): null
+                                }
+                            </AnimatePresence>
+                        </motion.div>
+                    </div>
                 </div>
-                <button>deneme</button>
             </div>
         </>
     )
