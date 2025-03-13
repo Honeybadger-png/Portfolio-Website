@@ -1,4 +1,14 @@
-import { ExperienceType } from "./Components/flipText"
+
+export interface ExperienceType  {
+    company: string;
+    startDate: string;
+    endDate: string;
+    status: string;
+    location: string;
+    texts : string[]; 
+}
+
+
 
 export const experiences: ExperienceType[] = [
     {

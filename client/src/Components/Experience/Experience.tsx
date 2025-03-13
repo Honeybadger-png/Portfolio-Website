@@ -1,5 +1,5 @@
 import FlipText from "../flipText";
-import { experiences } from "../../Constants";
+import { experiences } from "../../Constants/Constants";
 
 
 

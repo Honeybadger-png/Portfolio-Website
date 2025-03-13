@@ -1,14 +1,6 @@
 import {AnimatePresence, motion} from "framer-motion";
 import { useState } from "react";
-
-export type ExperienceType = {
-    company: string;
-    startDate: string;
-    endDate: string;
-    status: string;
-    location: string;
-    texts : string[]; 
-}
+import { ExperienceType } from "../Constants/Constants";
 
 
 
