@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
+    fill:{
+      current: 'currentColor',
+    },
     extend: {
       fontFamily: {
         audiowide: ["Audiowide","serif"]
