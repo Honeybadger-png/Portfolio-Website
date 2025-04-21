@@ -1,102 +1,11 @@
-import { title } from "process";
 import { styles } from "../../styles";
 import Fan from "../Canvas/Fan";
-import SkillsCard from "../Card/SkillsCard";
+import SkillsCard from "../Card/Skills";
 import './Introduction.css';
-import { url } from "inspector";
-
+import { skills } from "../../Constants/Constants";
 
 const Introduction = ()=>{
-    enum skillTypes {
-        Web = "Web",
-        Game = "Game",
-        Language = "Language"
-    }
 
-    const skills = [
-        {
-            title: skillTypes.Web,
-            logos: [
-                {
-                    url: "logo/skills_logo/html.png"
-                },
-                {
-                    url: "logo/skills_logo/css.png"
-                },
-                {
-                    url: "logo/skills_logo/tailwind.png"
-                },
-                {
-                    url: "logo/skills_logo/react.png"
-                },
-                {
-                    url: "logo/skills_logo/next.png"
-                },
-                {
-                    url: "logo/skills_logo/figma.png"
-                },
-            ]
-        },
-        {
-            title: skillTypes.Game,
-            logos: [
-                {
-                    url: "logo/skills_logo/blender.png"
-                },
-                {
-                    url: "logo/skills_logo/unity.png"
-                },
-            ]
-        },
-        {
-            title: skillTypes.Language,
-            languages: ["English","Japanese"]
-
-        }
-    ]
-
-    let logoArray = [
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/html.png"
-        },
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/css.png"
-        },
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/tailwind.png"
-        },
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/react.png"
-        },
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/next.png"
-        },
-        {
-            title: skillTypes.Web,
-            url: "logo/skills_logo/figma.png"
-        },
-        {
-            title: skillTypes.Game,
-            url: "logo/skills_logo/blender.png"
-        },
-        {
-            title: skillTypes.Game,
-            url: "logo/skills_logo/unity.png"
-        },
-        {
-            title: skillTypes.Language,
-            url: "English"
-        },
-        {
-            title: skillTypes.Language,
-            url: "Japanese"
-        },
-    ]
     return(
         <>
         <div className={`${styles.marginComponents} flex`}>
