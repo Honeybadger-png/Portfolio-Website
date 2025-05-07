@@ -89,14 +89,14 @@ const Projects = () =>{
                                 </div>
                             </div>
                         </div>
-                        <div className="w-[60%]">
-                            <motion.div className="border-2 h-[50vh]">
+                        <div className="w-[50%]">
+                            <motion.div className="image-container">
                                 <AnimatePresence>
                                     {
                                         hovered !== -1 ? (
-                                            <div>
-                                                {hovered}
-                                            </div>
+                                            
+                                            <img className="" src={webProjects[hovered].mainImage} alt="" />
+                                            
                                         ): null
                                     }
                                 </AnimatePresence>
