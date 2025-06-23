@@ -1,50 +1,6 @@
-# React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+I am close to finishing this project and I want to provide information about my goals with this project.
+Well, Because of being 3D artist I wanted to showcase my 3D models and I want to see more website that have 3D models. I know it is hard to use 3D models because of loading times with high poly assets but there are ways to dodge that problem, probably in 10 years our internet connection speed will be faster if we dont end the human race on Earth by Nuclear Weapons or Global Warming Anyway there are a lot of problems and its a different kind of topic. 
+I want to open a blog website maybe I can also upload them to my portfolio website I haven't decided that yet.
+I read Uncle Bob's Clean Code book nowadays, I also want to be a great developer so I will try to be clean with my codes.
+I am mainly focusing on Frontend with this project using React and other useful tools but In the future I can decide to make a backend service for this project because after making projects it will be pain using the vscode and upload the necessary files edit the constants etc.
+Well Thats it for now. I am back in business.
