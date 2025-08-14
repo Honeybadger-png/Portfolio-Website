@@ -1,6 +1,6 @@
 .item {
     min-height: 50vh;
-    min-width: 30vw;
+    min-width: auto;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -14,13 +14,13 @@
 
 
 
-.inner-carousel{
-    background-color: aqua;
-    display: flex;
+
+.container {
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-.carousel { 
-    cursor: grab;
-    overflow: hidden;
-    background-color: azure;
+.container::-webkit-scrollbar{
+    display: none;
 }
