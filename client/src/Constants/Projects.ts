@@ -110,35 +110,27 @@ export interface threeDProjectsType {
 
 export const threeDProjects : threeDProjectsType [] = [
     {
-        projectName: "Ruine",
+        projectName: "Stanley Quencher",
         fileName: "blabla",
         mainImage: {
             name: "Smokey",
-            url: "blabla.png"
+            url: "Stanley_Quencher_02.png"
         }
     },
     {
-        projectName: "MyTable",
+        projectName: "Asus Rog Pugio II",
         fileName: "blabla",
         mainImage: {
             name: "Smokey",
-            url: "blabla.png"
+            url: "asus_rog_pugio_2.png"
         }
     },
     {
-        projectName: "Ruine",
+        projectName: "Laptop",
         fileName: "blabla",
         mainImage: {
             name: "Smokey",
-            url: "blabla.png"
+            url: "laptop_render.png"
         }
-    },
-    {
-        projectName: "Ruine",
-        fileName: "blabla",
-        mainImage: {
-            name: "Smokey",
-            url: "blabla.png"
-        }
-    },
+    }
 ] 

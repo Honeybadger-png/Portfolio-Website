@@ -36,12 +36,12 @@ const WebProjectDisplay = () =>{
         <div className={`${styles.marginComponents} flex  h-[50vh] w-full`}>
                     <div className=" flex gap-2 w-full">
                         <div className="w-[40%]  h-full">
-                            <div className="h-[40vh] relative overflow-hidden cursor-grab">
+                            <div className="h-[40vh] relative overflow-hidden">
                                 <motion.div ref={careousel} className="h-full" animate={{y:height}} >
                                     {
                                         webProjects.map(
                                             (webProject,index)=>                           
-                                            <motion.div key={index} className=" border-2 h-[50px] border-cyber-orange mb-[16px]" 
+                                            <motion.div key={index} className=" border-2 h-[50px] border-cyber-orange mb-[16px] cursor-pointer" 
                                             whileHover={{x:50}} onHoverStart={()=>setHovered(index)} onHoverEnd={()=> setHovered(-1)}>
                                                 <h3>{webProject.projectName}</h3>
                                             </motion.div>

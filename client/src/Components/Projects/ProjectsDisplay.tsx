@@ -12,7 +12,7 @@ enum buttonType {
 }
 
 
-const Projects = () =>{
+const ProjectsDisplay = () =>{
     const [clickedButton, setClickedButton] = useState(buttonType.Web);
     
     return(
@@ -47,4 +47,4 @@ const Projects = () =>{
     )
 }
 
-export default Projects
+export default ProjectsDisplay

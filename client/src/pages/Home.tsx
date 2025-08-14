@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Hero from "../Components/Hero/Hero";
 import { styles } from "../styles";
 import Introduction from "../Components/Introduction/Introduction";
-import Projects from "../Components/Projects/Projects";
+import ProjectsDisplay from "../Components/Projects/ProjectsDisplay";
 import Experience from "../Components/Experience/Experience";
 import Contact from "../Components/Contact/Contact";
 
@@ -29,7 +29,7 @@ const Home = () => {
           <Hero/>
           <Introduction/>
           <Experience/>
-          <Projects/>
+          <ProjectsDisplay/>
           <Contact/>
         </div>
       </div> 
