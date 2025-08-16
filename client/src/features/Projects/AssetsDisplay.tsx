@@ -4,7 +4,7 @@ import { threeDProjects } from "../../Constants/Projects";
 import './ThreedModels.css';
 import { Link } from "react-router-dom";
 
-const ThreedModels = () => {
+const AssetsDisplay = () => {
     const displayNumber = 4;
     let newThreeProjects = threeDProjects;
 
@@ -37,4 +37,4 @@ const ThreedModels = () => {
     )
 }
 
-export default ThreedModels
+export default AssetsDisplay;

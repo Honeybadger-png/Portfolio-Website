@@ -1,6 +1,6 @@
 import { styles } from "../../styles";
-import Fan from "../Canvas/Fan";
-import SkillsCard from "../Card/Skills";
+import Fan from "../../Canvas/Fan";
+import SkillsCard from "../skills/Skills";
 import './Introduction.css';
 import { skills } from "../../Constants/Constants";
 
@@ -30,7 +30,13 @@ const Introduction = ()=>{
         </div>
         <div className="h-full grid grid-cols-3 gap-4">
             {
-                skills.map((skill)=> <SkillsCard skill={skill}></SkillsCard>)
+                skills.map((skill,index)=> {
+                return (
+                    <div key={index}>
+                        <SkillsCard skill={skill} ></SkillsCard>
+                    </div>
+                )
+            })
             }
         </div >
         </>

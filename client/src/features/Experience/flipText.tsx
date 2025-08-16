@@ -1,6 +1,6 @@
 import {AnimatePresence, motion} from "framer-motion";
 import { useState } from "react";
-import { ExperienceType } from "../Constants/Constants";
+import { ExperienceType } from "../../Constants/Constants";
 
 
 
@@ -40,7 +40,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                 <AnimatePresence>
                     {
                         isClicked && (
-                            <motion.div  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-cyber-orange border-opacity-50 ">
+                            <motion.div key="content"  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-cyber-orange border-opacity-50 ">
                                 <ul className="list-disc text-lg p-4 justify-items-center  "> 
                                     {
                                         experience.texts.map((text,number)=>

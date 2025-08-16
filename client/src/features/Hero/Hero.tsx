@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { styles } from "../../styles";
-import DeskCanvas from "../Canvas/Desk";
+import DeskCanvas from "../../Canvas/Desk";
 
 const Hero = () =>{
   const Titles = [

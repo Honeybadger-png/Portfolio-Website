@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import {Canvas} from '@react-three/fiber';
 import { OrbitControls,Preload,useGLTF} from '@react-three/drei';
-import Loader from '../Loader/Loader'
+import Loader from '../Components/Loader/Loader';
 
 const Desk = ()=> {
   const desk = useGLTF('./my_desk_view/desk.gltf')

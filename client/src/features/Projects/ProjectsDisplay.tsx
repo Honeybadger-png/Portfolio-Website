@@ -3,7 +3,7 @@ import { useState } from "react";
 import { styles } from "../../styles"
 import "./Projects.css";
 
-import ThreedModels from "./ThreedModels";
+import AssetsDisplay from "./AssetsDisplay";
 import WebProjectDisplay from "./WebProjectDisplay";
 
 enum buttonType {
@@ -40,7 +40,7 @@ const ProjectsDisplay = () =>{
                 clickedButton === buttonType.Web ? (
                  <WebProjectDisplay/>
                 ) : ( 
-                   <ThreedModels /> 
+                   <AssetsDisplay /> 
                 )
             }
         </>

@@ -1,4 +1,4 @@
-import FlipText from "../flipText";
+import FlipText from "./flipText";
 import { experiences } from "../../Constants/Constants";
 
 
@@ -16,11 +16,9 @@ const Experience = ()=>{
             {
                 experiences.map((value,key)=>{
                     return(
-                    <>
                         <FlipText experience={value}  key={key} current={key} length={listLength} >
 
                         </FlipText>
-                    </>
                     )
                 })
             }

@@ -4,7 +4,7 @@
 const Fan = ()=>{
     return (
         <div>
-            <h2>3D fan will be placed here</h2>
+            <h2>Cyberpunk themed character</h2>
         </div>
     )
 }
