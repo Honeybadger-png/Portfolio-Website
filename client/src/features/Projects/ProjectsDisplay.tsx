@@ -5,6 +5,7 @@ import "./Projects.css";
 
 import AssetsDisplay from "./AssetsDisplay";
 import WebProjectDisplay from "./WebProjectDisplay";
+import { Link } from "react-router-dom";
 
 enum buttonType {
     Web = "WEB",
@@ -35,6 +36,13 @@ const ProjectsDisplay = () =>{
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="flex justify-center">
+                <Link to="/projects">
+                    <div className="p-2 cursor-pointer " >
+                        <h2 className="hover:text-secondary">For More</h2>
+                    </div>
+                </Link>
             </div>
             {
                 clickedButton === buttonType.Web ? (

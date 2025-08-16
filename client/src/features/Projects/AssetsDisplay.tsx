@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { styles } from "../../styles"
 import { threeDProjects } from "../../Constants/Projects";
 import './ThreedModels.css';
-import { Link } from "react-router-dom";
 
 const AssetsDisplay = () => {
     const displayNumber = 4;
@@ -14,11 +13,6 @@ const AssetsDisplay = () => {
 
     return (
         <div className={`${styles.marginComponents} flex flex-col h-[60vh] w-full`}>
-            <Link to="/projects">
-                <div className="p-2 cursor-pointer" >
-                    <h2>For More</h2>
-                </div>
-            </Link>
             <motion.div  className="container">
                 {
                     newThreeProjects.map((project)=> {
