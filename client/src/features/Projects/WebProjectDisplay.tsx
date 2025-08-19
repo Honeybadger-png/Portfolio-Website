@@ -6,6 +6,9 @@ import { styles } from "../../styles"
 
 const WebProjectDisplay = () =>{
     const [hovered, setHovered] = useState(-1);
+    const [page,SetPage] = useState(1);
+    
+    const totalPage = Math.ceil (webProjects.length / 4);
 
     const careousel = useRef<HTMLDivElement>(null);
 
@@ -13,18 +16,19 @@ const WebProjectDisplay = () =>{
     const careouselH = careousel.current?.offsetHeight || 280;
     const scrollH = careousel.current?.scrollHeight || 0;
 
+
     function Increase ( amount:number) {
-        console.log(height)
         if(-height <= scrollH - careouselH ){
             setHeight(height - amount)
-            
+            SetPage(page+1);
         }
-
     }
     function Decrease (amount:number){
 
+        console.log(page);
             if (height !==0){
                 setHeight(height + amount)
+                SetPage(page-1);
                 console.log(height)
             }else{
                 console.log("0")
@@ -41,9 +45,9 @@ const WebProjectDisplay = () =>{
                                     {
                                         webProjects.map(
                                             (webProject,index)=>                           
-                                            <motion.div key={index} className=" border-2 h-[50px] border-cyber-orange mb-[16px] cursor-pointer" 
+                                            <motion.div key={index} className=" content-center p-2 border-2 h-[50px] border-cyber-orange mb-[16px] cursor-pointer" 
                                             whileHover={{x:50}} onHoverStart={()=>setHovered(index)} onHoverEnd={()=> setHovered(-1)}>
-                                                <h3>{webProject.projectName}</h3>
+                                                <h4 className="whitespace-nowrap">{webProject.projectName}</h4>
                                             </motion.div>
                                             )
                                     }
@@ -52,6 +56,7 @@ const WebProjectDisplay = () =>{
                             <div className="h-[10vh]">
                                 <div className="flex justify-between px-20">
                                     <button className="p-2 border-2 cursor-pointer" onClick={()=>Decrease(careouselH)}>{"<"}</button>
+                                    <div>{page} / {totalPage}</div>
                                     <button className="p-2 border-2 cursor-pointer" onClick={()=>Increase(careouselH)} >{">"}</button>
                                 </div>
                             </div>
