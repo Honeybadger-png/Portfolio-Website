@@ -14,6 +14,12 @@ export interface projectText {
     image?: Image;
 }
 
+export interface ProjectsType{
+    projectName: string;
+    mainImage: string;
+    projectType: string;
+}
+
 export interface webProjectsType {
     projectName : string;
     githubLink? : string;
@@ -145,31 +151,23 @@ export const webProjects: webProjectsType[] = [
 export interface threeDProjectsType {
     projectName: string;
     fileName?: string;
-    mainImage: Image;
+    mainImage: string;
 }
 export const threeDProjects : threeDProjectsType [] = [
     {
         projectName: "Stanley Quencher",
         fileName: "blabla",
-        mainImage: {
-            name: "Smokey",
-            url: "Stanley_Quencher_02.png"
-        }
+        mainImage: "/projects/models/images/Stanley_Quencher_02.png"
+
     },
     {
         projectName: "Asus Rog Pugio II",
         fileName: "blabla",
-        mainImage: {
-            name: "Smokey",
-            url: "asus_rog_pugio_2.png"
-        }
+        mainImage: "/projects/models/images/asus_rog_pugio_2.png"
     },
     {
         projectName: "Laptop",
         fileName: "blabla",
-        mainImage: {
-            name: "Smokey",
-            url: "laptop_render.png"
-        }
+        mainImage: "/projects/models/images/laptop_render.png"
     }
 ] 

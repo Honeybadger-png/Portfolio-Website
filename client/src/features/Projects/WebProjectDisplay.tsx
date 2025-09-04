@@ -18,7 +18,7 @@ const WebProjectDisplay = () =>{
 
 
     function Increase ( amount:number) {
-        if(-height <= scrollH - careouselH ){
+        if(-height < scrollH - careouselH ){
             setHeight(height - amount)
             SetPage(page+1);
         }

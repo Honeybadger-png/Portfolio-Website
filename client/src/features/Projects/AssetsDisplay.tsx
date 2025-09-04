@@ -19,7 +19,7 @@ const AssetsDisplay = () => {
                         return(
                             <motion.div className="item" key={project.projectName}>
                                 <h4>{project.projectName}</h4>
-                                <img src={`projects/models/images/${project.mainImage.url}`} alt="" />
+                                <img src={`${project.mainImage}`} alt="" />
                                 
                             </motion.div>
                         )
