@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import { ProjectsType } from "../../Constants/Projects";
 
 interface ProjectProps {
@@ -7,10 +7,20 @@ interface ProjectProps {
 
 const WebProjectsCard: FC<ProjectProps> = (props): JSX.Element => {
 
+    useEffect(()=>{
+        fetch('http://localhost:3000/')
+            .then((res)=>{
+                return res.json();
+            })
+            .then((data)=>{
+                console.log(data);
+            })
+    })
+
     return (
         <>
 
-            <div className="h-auto p-2">
+            <div className="h-auto p-2 cursor-pointer" >
                 <div className="h-[35vh] flex justify-center">
                     <img className="flex h-full object-contain" src={`${props.project.mainImage}`} alt="" />
                 </div>
