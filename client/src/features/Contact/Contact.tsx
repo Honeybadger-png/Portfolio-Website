@@ -31,15 +31,16 @@ const Contact = ()=>{
             <div className={`${styles.marginComponents}`}>
                 <div className="flex gap-4 w-full">
                     <div className="w-[50%]">
-                        <h2>Do you want to work with me ?</h2>
+                        <h2>Get in Touch</h2>
+                        <h4>I don't have a Mailgun servie currently. But you can reach me via my email <span className="text-primary">mertgul1878@gmail.com</span></h4>
                         <IconContext.Provider value={{className: 'react-icons'}}>
-                            <div className="flex flex-wrap  gap-4">
-                                <div className="h-[15vh] w-[10vw]">
+                            <div className="flex flex-wrap p-4 gap-4">
+                                <div className="h-[10vh] w-[10vw]">
                                     <a href="https://www.linkedin.com/in/mertkun/" target="_blank" className="">
                                         <FaLinkedin />
                                     </a>
                                 </div>
-                                <div className="h-[15vh] w-[10vw]">
+                                <div className="h-[10vh] w-[10vw]">
                                     <a href="mailto:mertgul1878@gmail.com">
                                         <MdMailOutline/> 
                                     </a>

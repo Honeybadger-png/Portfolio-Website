@@ -1,11 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBars, faXmark} from '@fortawesome/free-solid-svg-icons'
-import { useState } from "react";
+
 import './navbar.css'
 
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(true);
 
   return (
     <>
@@ -26,9 +23,6 @@ const Navbar = () => {
             </li>
             <li className="menu-item">
               <a href="/projects">PROJECTS</a>
-            </li>
-            <li className="menu-item">
-              <a href="#contact">CONTACT</a>
             </li>
           </ul>
         </div>

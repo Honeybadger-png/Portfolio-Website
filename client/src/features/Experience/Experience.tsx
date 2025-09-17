@@ -1,5 +1,6 @@
 import FlipText from "./flipText";
 import { experiences } from "../../Constants/Constants";
+import { styles } from "../../styles";
 
 
 
@@ -9,7 +10,7 @@ const Experience = ()=>{
     const listLength = experiences.length;
 
     return (
-        <div className="my-6">
+        <div className={`${styles.marginComponents}`}>
             <div className="justify-items-center mb-6">
                 <h1>WORK EXPERIENCE</h1>
             </div>
