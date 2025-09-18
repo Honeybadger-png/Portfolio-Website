@@ -19,6 +19,7 @@ const Contact = ()=>{
     const SubmitHandler = async(e: { preventDefault: () => void; }) => {
         e.preventDefault();
         SetSubmitClicked(true);
+        console.log(name,email,text);
         return toast.error("I don't want to pay for mailgun, You can reach me with my E-mail adress and Linkedin.");
 
     }

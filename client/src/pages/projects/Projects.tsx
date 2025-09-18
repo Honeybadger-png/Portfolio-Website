@@ -9,7 +9,7 @@ enum categories{
 }
 
 const Projects = () => {
-    const [selected, setSelected] = useState([categories.all]);
+    const selected = [categories.all]
     const [projects,setProjects] = useState<ProjectsType[]>([]);
     let tempProjects: ProjectsType[] = [];
 
