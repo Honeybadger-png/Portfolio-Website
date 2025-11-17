@@ -1,10 +1,12 @@
+import { languageType } from "../Lib/lang";
+
 export interface ExperienceType  {
     company: string;
     startDate: string;
     endDate: string;
-    status: string;
+    status: languageType;
     location: string;
-    texts : string[]; 
+    texts : languageType[]; 
 }
 
 export const experiences: ExperienceType[] = [
@@ -12,11 +14,18 @@ export const experiences: ExperienceType[] = [
         company: "Asumona",
         startDate: "02/2023",
         endDate: "06/2023",
-        status: "Intern",
+        status: {
+            en: "Intern",
+            tr: "",
+            jp: ""
+        },
         location: "Ankara",
         texts: [
-            'During my internship, I had an opportunity to work on Frontend Development. I gained hands on experience PHP and Laravel.asdsadsadasdsadsadasdasdsadas',
-            'bakalim'
+            {
+                en: "During my internship, I had an opportunity to work on Frontend Development. I gained hands on experience PHP and Laravel.asdsadsadasdsadsadasdasdsadas",
+                tr: "",
+                jp: ""
+            }
         ],
     },
 ]
@@ -30,7 +39,12 @@ enum skillTypes {
 
 export const skills = [
     {
-        title: skillTypes.Web,
+        name: skillTypes.Web,
+        title: {
+            en: "Web",
+            tr: "Web",
+            jp: ""
+        },
         logos: [
             {
                 url: "logo/skills_logo/html.png"
@@ -53,7 +67,12 @@ export const skills = [
         ]
     },
     {
-        title: skillTypes.Game,
+        name: skillTypes.Game,
+        title: {
+            en: "Game",
+            tr: "Oyun",
+            jp: ""
+        },
         logos: [
             {
                 url: "logo/skills_logo/blender.png"
@@ -64,7 +83,12 @@ export const skills = [
         ]
     },
     {
-        title: skillTypes.Language,
+        name: skillTypes.Language,
+        title: {
+            en: "Language",
+            tr: "Dil",
+            jp: ""
+        },
         languages: ["English","Japanese"]
 
     }

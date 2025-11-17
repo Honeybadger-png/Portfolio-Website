@@ -25,7 +25,7 @@ const Contact = ()=>{
     }
 
     return(
-        <div className={`${styles.marginComponents} ${styles.marginBottom}`} id="contact">
+        <div className={`h-[70vh] ${styles.marginComponents}`} id="contact">
             <div className="justify-items-center">
                 <h1>Contact Me</h1>
             </div>

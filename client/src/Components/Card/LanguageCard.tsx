@@ -6,12 +6,12 @@ const LanguageCard = (props:propsType): JSX.Element => {
     const [isClicked, setIsClicked] = useState("");
     return (
         <div className='flex flex-col'>
-            <motion.div className='border-2 border-cyber-orange justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.title): setIsClicked("")}>
-                <h2>{props.skill.title}</h2>
+            <motion.div className='border-2 border-cyber-orange justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name): setIsClicked("")}>
+                <h2>{props.skill.name}</h2>
             </motion.div>
             <AnimatePresence>
             {
-                isClicked === props.skill.title && (
+                isClicked === props.skill.name && (
                         <motion.div
                         key="content" 
                         className=' h-full flex flex-col justify-items-center content-center' 

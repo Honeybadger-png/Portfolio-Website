@@ -1,17 +1,17 @@
 import {AnimatePresence, motion} from "framer-motion";
 import { useState } from "react";
-import { propsType } from "./Skills";
+import { propsType } from "../../features/skills/Skills";
 
 const SkillsCard = (props:propsType): JSX.Element => {
     const [isClicked, setIsClicked] = useState("");
     return (
         <div>
-            <motion.div className='border-2 border-cyber-orange justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.title) : setIsClicked("")}>
-                <h2>{props.skill.title}</h2>
+            <motion.div className='border-2 border-cyber-orange justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name) : setIsClicked("")}>
+                <h2>{props.skill.name}</h2>
             </motion.div>
             <AnimatePresence>
             {
-                isClicked === props.skill.title && (
+                isClicked === props.skill.name && (
                         <motion.div 
                         key="content"
                         className=' h-full justify-items-center content-cente overflow-hiddenr' 

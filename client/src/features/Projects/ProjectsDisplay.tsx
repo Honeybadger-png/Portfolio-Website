@@ -18,10 +18,9 @@ const ProjectsDisplay = () =>{
     
     return(
         <>
-            <div className={`${styles.marginComponents} justify-items-center `}>
+        <div className={`${styles.marginComponents}`}>
+            <div className={`justify-center justify-items-center`}>
                 <h1>Projects</h1>
-            </div>
-            <div className={`${styles.marginComponents} justify-center justify-items-center`}>
                 <div className="wrap">
                     <div className="left-button-parent">
                         <div className={`left-button-border ${clickedButton === buttonType.Web ? "bg-cyber-orange" : "bg-primary" }`}></div>
@@ -51,6 +50,7 @@ const ProjectsDisplay = () =>{
                    <AssetsDisplay /> 
                 )
             }
+        </div>
         </>
     )
 }

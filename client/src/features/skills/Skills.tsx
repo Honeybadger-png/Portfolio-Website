@@ -1,10 +1,12 @@
 import './Skills.css';
 import LanguageCard from '../../Components/Card/LanguageCard';
-import SkillsCard from './SkillsCard';
+import SkillsCard from '../../Components/Card/SkillsCard';
+import { languageType } from '../../Lib/lang';
 
 export type propsType = {
     skill: {
-        title:string;
+        name:string,
+        title:languageType,
         logos?:{
             url:string;
         }[];
@@ -18,7 +20,7 @@ const Skills = (props:propsType): JSX.Element => {
             <div className={`h-auto`} key="content">
                 <div >
                     {
-                            props.skill.title !== "Language" ? (
+                            props.skill.name !== "Language" ? (
                                 <SkillsCard skill={props.skill}  />
                             ) : (
                                 <LanguageCard skill={props.skill} />

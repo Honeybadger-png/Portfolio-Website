@@ -24,7 +24,7 @@ const Hero = () =>{
   },[change]);
 
   return(
-    <section className="h-[90vh] bg-[auto_100vh] bg-center bg-no-repeat bg-[url(/logo/Background_Image.svg)]" >
+    <section className="h-[100vh] bg-[auto_100vh] bg-center bg-no-repeat bg-[url(/logo/Background_Image.svg)]" >
       <div className={`${styles.paddinX}${styles.paddingY} `}>
         {/* <div className={`${styles.heroSubText} z-10 top-[20%] text-secondary absolute  justify-center cursor-pointer`}>
           {`{MERHABA}`}

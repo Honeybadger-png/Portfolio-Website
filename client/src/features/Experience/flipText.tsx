@@ -1,10 +1,12 @@
 import {AnimatePresence, motion} from "framer-motion";
 import { useState } from "react";
 import { ExperienceType } from "../../Constants/Constants";
+import { getLanguage } from "../../Lib/lang";
 
 
 
 const FlipText = ({experience,current,length}:{experience:ExperienceType,current:number,length:number}) =>{
+    const language = getLanguage();
     const [isClicked, setIsClicked] = useState(false);
     console.log(current,length);
     const borderOption = current === (length -1) ? '' : 'border  border-t-0 ';
@@ -32,7 +34,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                         hovered:{y:0}
                     }} onClick={()=>setIsClicked(!isClicked)}  >
                         <div className="flex flex-row justify-between">
-                            <h1>{experience.status}</h1>
+                            <h1>{experience.status[language]}</h1>
                             <h1>{experience.endDate}</h1>
                         </div>
                     </motion.div>
@@ -45,7 +47,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                                     {
                                         experience.texts.map((text,number)=>
                                             <li key={number}  className="w-[50vw] h-full text-wrap">
-                                                <p>{text}</p>
+                                                <p>{text[language]}</p>
                                             </li>
                                         )
                                     }
