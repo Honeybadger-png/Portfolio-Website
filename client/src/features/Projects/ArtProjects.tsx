@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArtProjectsData } from "../../Constants/Projects";
 import { getLanguage } from "../../Lib/lang";
+import { Link } from "react-router-dom";
 
 const ArtProjects = () => {
     const currentLanguage = getLanguage();
@@ -32,7 +33,9 @@ const ArtProjects = () => {
                                     ))
                                 }
                                 <img className="w-[350px] h-[200px] object-contain" src={artProject.secondaryImage} alt="" />
-                                <button className="absolute right-0 bottom-0 hover:text-cyber-orange" >Details</button>
+                                <Link to={`/project/art/${artProject.id}`}>
+                                    <button className="absolute right-0 bottom-0 hover:text-cyber-orange" >Details</button>
+                                </Link>
                             </motion.div>
                         </motion.div>
                     )

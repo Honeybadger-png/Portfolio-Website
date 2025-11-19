@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { webProjects } from "../../Constants/Projects";
 import { getLanguage } from "../../Lib/lang";
+import { Link } from "react-router-dom";
 
 
 
@@ -40,7 +41,9 @@ const WebProjects = () => {
                                         })
                                     }
                                 </ul>
-                                <button className="absolute bottom-0 right-0 hover:text-cyber-orange">Details </button>
+                                <Link to={`/project/web/${webProject.id}`}>
+                                    <button className="absolute bottom-0 right-0 hover:text-cyber-orange">Details </button>
+                                </Link>
                             </motion.div>
                         </motion.div>
                     )

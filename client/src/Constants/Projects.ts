@@ -1,6 +1,7 @@
 import { languageType } from "../Lib/lang";
 
 export interface webProjectsType {
+    id: number;
     projectName : string;
     summary: languageType;
     usedTechnologies: languageType[];
@@ -13,6 +14,7 @@ export interface webProjectsType {
 
 
 export interface artProjectsType {
+    id: number;
     projectName: string;
     explanations: languageType[];
     fileName?: string;
@@ -42,6 +44,7 @@ export interface projectText {
 
 export const webProjects: webProjectsType[] = [
     {
+        id: 1,
         projectName : "My Library",
         mainImage: '/projects/web/MyLibrary/my-library-home-page.png',
         summary: {
@@ -109,6 +112,7 @@ export const webProjects: webProjectsType[] = [
 
     },
     {
+        id:2,
         projectName : "Microservice Experiments",
         mainImage: '/projects/web/Microservice/docker.png',
         summary: {
@@ -181,6 +185,7 @@ export const webProjects: webProjectsType[] = [
 
     },
     {
+        id:3,
         projectName : "Parsley",
         mainImage: '/projects/web/parsley/Parsley.png',
         summary: {
@@ -259,6 +264,7 @@ export const webProjects: webProjectsType[] = [
 
 export const ArtProjectsData : artProjectsType [] = [
     {
+        id:4,
         projectName: "Stanley Quencher",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/Stanley_Quencher_02.png",
@@ -278,6 +284,7 @@ export const ArtProjectsData : artProjectsType [] = [
 
     },
     {
+        id:5,
         projectName: "Asus Rog Pugio II",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/asus_rog_pugio_2.png",
@@ -296,6 +303,7 @@ export const ArtProjectsData : artProjectsType [] = [
         ]
     },
     {
+        id:6,
         projectName: "Laptop",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/laptop_render.png",
