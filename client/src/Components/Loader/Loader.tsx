@@ -1,15 +1,13 @@
 
-import {Html, useProgress} from '@react-three/drei'
+const Loader = ({progress}: {progress:number})=> {
 
-const Loader = ()=> {
-    const {progress} = useProgress();
 
     return(
-        <Html>    
-            <div>
-                <p className='text-neon-pink font-bold'>{progress.toFixed(2)}%</p>
-            </div>
-        </Html>
+
+        <div className="fixed inset-0 flex items-center justify-center bg-black text-primary text-3xl">
+            Loading... {progress}%
+        </div>
+
     )
 }
 

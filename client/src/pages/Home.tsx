@@ -19,7 +19,9 @@ const Home = () => {
           <Hero/>
           <Introduction/>
           <Experience/>
-          <ProjectsDisplay/>
+          <div id="projects">
+            <ProjectsDisplay/>
+          </div>
           <Contact/>
         </div>
       </div> 

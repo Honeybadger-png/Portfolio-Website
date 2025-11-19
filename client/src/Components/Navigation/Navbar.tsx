@@ -22,7 +22,7 @@ const Navbar = () => {
               <a href="/about">ABOUT</a>
             </li>
             <li className="menu-item">
-              <a href="/projects">PROJECTS</a>
+              <a href="#projects">PROJECTS</a>
             </li>
           </ul>
         </div>
