@@ -4,12 +4,13 @@ export interface webProjectsType {
     id: number;
     projectName : string;
     summary: languageType;
-    usedTechnologies: languageType[];
+    usedTechnologies: string[];
     githubLink? : string;
     projectLink? : string;
     projectIcons : icons[];
     mainImage : string;
     projectTexts : projectText[];
+    images: Image[];
 }
 
 
@@ -20,8 +21,8 @@ export interface artProjectsType {
     fileName?: string;
     mainImage: string;
     secondaryImage: string;
-    summaryTexts: languageType[];
-    detailedImages?: Image[];
+    summaryText: languageType;
+    detailedImages: Image[];
 }
 
 export interface icons{
@@ -52,18 +53,7 @@ export const webProjects: webProjectsType[] = [
             tr: "",
             jp: ""
         },
-        usedTechnologies: [
-            {
-                en: "Angular",
-                tr: "",
-                jp: ""
-            },
-            {
-                en: "Tailwindcss",
-                tr: "",
-                jp: ""
-            }
-        ],
+        usedTechnologies: ["Angular","Tailwind"],
         projectIcons: [
             {
                 icon: "github",
@@ -90,11 +80,6 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "Library Tables",
-                        url: "there will be a image related to Library Section"
-                    },
             },
             {
                 text: {
@@ -102,13 +87,23 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "project introduction",
-                        url: "there will be a image related to final project"
-                    },
             },
-        ]
+        ],
+        images: [
+            {
+                name: "deneme1",
+                url: ""
+            },
+            {
+                name: "deneme2",
+                url: ""
+            },
+            {
+                name: "deneme3",
+                url: ""
+            },
+        ],
+        githubLink: "asldkasjlkasd"
 
     },
     {
@@ -120,28 +115,18 @@ export const webProjects: webProjectsType[] = [
             tr: "",
             jp: ""
         },
-        usedTechnologies: [
-            {
-                en: "Docker",
-                tr: "",
-                jp: ""
-            },
-            {
-                en: "Typescript",
-                tr: "",
-                jp: ""
-            },
-            {
-                en: "Google Cloud",
-                tr: "",
-                jp: ""
-            }
-        ],
+        usedTechnologies: ["Docker","Kubernetes","Google Cloud"],
         projectIcons: [
             {
                 icon: "github",
                 link: 'https://github.com/Honeybadger-png/my-library',
                 name: 'github'
+            }
+        ],
+        images: [
+            {
+                name: "deneme",
+                url: ""
             }
         ],
         projectTexts: [
@@ -193,28 +178,18 @@ export const webProjects: webProjectsType[] = [
             tr: "",
             jp: ""
         },
-        usedTechnologies: [
-            {
-                en: "Flutter",
-                tr: "",
-                jp: ""
-            },
-            {
-                en: "Firebase",
-                tr: "",
-                jp: ""
-            },
-            {
-                en: "AI",
-                tr: "",
-                jp: ""
-            }
-        ],
+        usedTechnologies: ["Flutter","Firebase","AI"],
         projectIcons: [
             {
                 icon: "github",
                 link: 'https://github.com/Honeybadger-png/Flutter-Projects',
                 name: 'github'
+            }
+        ],
+        images: [
+            {
+                name: "deneme",
+                url: ""
             }
         ],
         projectTexts: [
@@ -262,7 +237,7 @@ export const webProjects: webProjectsType[] = [
 
 
 
-export const ArtProjectsData : artProjectsType [] = [
+export const artProjectsData : artProjectsType [] = [
     {
         id:4,
         projectName: "Stanley Quencher",
@@ -274,11 +249,17 @@ export const ArtProjectsData : artProjectsType [] = [
             tr: "",
             jp: ""
         }],
-        summaryTexts: [
+        summaryText: 
             {
-                en: "",
+                en: "I am big fan of Stanley thermos and I wanted to model it to showcase my workspace. I also tried new shadings while working on this project.",
                 tr: "",
                 jp: ""
+            }
+        ,
+        detailedImages: [
+            {
+                name: "sdasd",
+                url: "sadsasa"
             }
         ]
 
@@ -294,11 +275,17 @@ export const ArtProjectsData : artProjectsType [] = [
             tr: "",
             jp: ""
         }],
-        summaryTexts: [
+        summaryText: 
             {
                 en: "",
                 tr: "",
                 jp: ""
+            }
+        ,
+       detailedImages: [
+            {
+                name: "sdasd",
+                url: "sadsasa"
             }
         ]
     },
@@ -313,11 +300,17 @@ export const ArtProjectsData : artProjectsType [] = [
             tr: "",
             jp: ""
         }],
-        summaryTexts: [
+        summaryText: 
             {
                 en: "",
                 tr: "",
                 jp: ""
+            }
+        ,
+       detailedImages: [
+            {
+                name: "sdasd",
+                url: "sadsasa"
             }
         ]
     },
