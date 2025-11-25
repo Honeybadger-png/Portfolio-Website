@@ -14,9 +14,9 @@ const Introduction = ()=>{
         <div className={`h-[60vh] ${styles.marginComponents} flex`}>
             <div className="introduction">
                 <div className="">
-                    <h3 className="text-text-soft">{introductionContent.section[language]}</h3>
+                    <h3 className="text-secondary">{introductionContent.section[language]}</h3>
                 </div>
-                <div className="">
+                <div className="flex items-center gap-2">
                     <h1 className="text-primary">HEY!</h1>
                     <h2>{introductionContent.title[language]}</h2>
                 </div>
@@ -29,7 +29,7 @@ const Introduction = ()=>{
                 <Fan/>
             </div>
         </div>
-        <div className={`justify-items-center ${styles.marginComponents}`}>
+        <div className={`justify-items-center text-secondary ${styles.marginComponents}`}>
             <h1>{introductionContent.skills[language]}</h1>
         </div>
         <div className="h-[40vh] grid grid-cols-3 gap-4">

@@ -37,10 +37,10 @@ const ProjectCarousel = ({images}:ProjectImagesProps) => {
                 }
               </div>
 
-              <div className="absolute top-[50%] left-0 text-purple-500" onClick={()=> setCurrentIndex((i)=> Math.max(i-1,0))}>
+              <div className="absolute top-[50%] left-0 text-primary" onClick={()=> setCurrentIndex((i)=> Math.max(i-1,0))}>
                   <button className="text-[24px]"> <FaChevronLeft /></button>
               </div>
-              <div className="absolute top-[50%] right-0  text-purple-500" onClick= {()=> setCurrentIndex((i)=> Math.min(i+1,images.length-1))}>
+              <div className="absolute top-[50%] right-0  text-primary" onClick= {()=> setCurrentIndex((i)=> Math.min(i+1,images.length-1))}>
                   <button className="text-[24px]"><FaChevronRight /></button>
               </div>
           </div>

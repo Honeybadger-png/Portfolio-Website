@@ -28,21 +28,21 @@ const WebProjects = () => {
                                 hovered: {opacity:1}
                             }}
                             transition={{duration:0.5}}>
-                                <h3 className="text-cyber-orange pb-2">{webProject.projectName}</h3>
+                                <h3 className="text-neon-pink pb-2">{webProject.projectName}</h3>
                                 <p className="text-[12px] text-ellipsis line-clamp-8 pb-2">{webProject.summary[currentLanguage]}</p>
                                 <ul className="flex flex-row flex-wrap gap-2">
                                     {
                                         webProject.usedTechnologies.map((tag, index)=> {
                                             return(
                                                 <li key={index} className="">
-                                                    <span className="text-secondary">#</span>{tag[currentLanguage]}
+                                                    <span className="text-secondary">#</span>{tag}
                                                 </li>
                                             )
                                         })
                                     }
                                 </ul>
                                 <Link to={`/project/web/${webProject.id}`}>
-                                    <button className="absolute bottom-0 right-0 hover:text-cyber-orange">Details </button>
+                                    <button className="absolute bottom-0 right-0 hover:text-primary">Details </button>
                                 </Link>
                             </motion.div>
                         </motion.div>

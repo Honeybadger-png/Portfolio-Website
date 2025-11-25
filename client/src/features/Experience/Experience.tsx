@@ -1,21 +1,22 @@
 import FlipText from "./flipText";
-import { experiences } from "../../Constants/Constants";
+import { experienceData } from "../../Constants/Constants";
 import { styles } from "../../styles";
+import { getLanguage } from "../../Lib/lang";
 
 
 
 
 const Experience = ()=>{
-
-    const listLength = experiences.length;
+    const currentLanguage = getLanguage()
+    const listLength = experienceData.experiences.length;
 
     return (
         <div className={`${styles.marginComponents}`}>
             <div className="justify-items-center mb-6">
-                <h1>WORK EXPERIENCE</h1>
+                <h1 className="text-secondary">{experienceData.title[currentLanguage]}</h1>
             </div>
             {
-                experiences.map((value,key)=>{
+                experienceData.experiences.map((value,key)=>{
                     return(
                         <FlipText experience={value}  key={key} current={key} length={listLength} >
 

@@ -7,9 +7,12 @@ import { styles } from "../../styles"
 import { IconContext } from "react-icons";
 import './Contact.css';
 import { useState } from "react";
+import { getLanguage } from "../../Lib/lang";
+import { contactSectionData } from "../../Constants/Constants";
 
 
 const Contact = ()=>{
+    const currentLanguage = getLanguage()
 
     const [name,SetName] = useState('');
     const [email,SetEmail] = useState('');
@@ -26,14 +29,13 @@ const Contact = ()=>{
 
     return(
         <div className={`h-[70vh] ${styles.marginComponents}`} id="contact">
-            <div className="justify-items-center">
-                <h1>Contact Me</h1>
+            <div className="justify-items-center text-secondary">
+                <h1>{contactSectionData.header[currentLanguage]}</h1>
             </div>
             <div className={`${styles.marginComponents}`}>
                 <div className="flex gap-4 w-full">
                     <div className="w-[50%]">
-                        <h2>Get in Touch</h2>
-                        <h4>I don't have a Mailgun servie currently. But you can reach me via my email <span className="text-primary">mertgul1878@gmail.com</span></h4>
+                        <h4>{contactSectionData.text[currentLanguage]}<span className="text-primary">{contactSectionData.mail}</span></h4>
                         <IconContext.Provider value={{className: 'react-icons'}}>
                             <div className="flex flex-wrap p-4 gap-4">
                                 <div className="h-[10vh] w-[10vw]">
@@ -48,35 +50,10 @@ const Contact = ()=>{
                                 </div>
                             </div>
                         </IconContext.Provider>
-                        {
-                            submitClicked ? (
-                                <div>
-                                    <h2>
-                                        this is my mail adress : <span className="text-primary">mertgul1878@gmail.com</span> 
-                                    </h2>
-                                </div>
-                            ) : ''
-                        }
+                        
                     </div>
-                    <div className="h-full w-[50%] border-2">
-                        <ToastContainer position="bottom-center" limit={1} />
-                        <form action="" className="flex flex-col p-4" onSubmit={SubmitHandler}>
-                            <label className="flex flex-col">
-                                <span className="px-2">Your Name</span>
-                                <input type="text" onChange={(e)=> SetName(e.target.value)} name="name" placeholder="What's your name?" className="bg-inherit py-4 px-6 border-2" />
-                            </label>
-                            <label className="flex flex-col">
-                                <span className="px-2">Your Email</span>
-                                <input type="email" onChange={(e)=> SetEmail(e.target.value)} name="email" placeholder="What's your email?" className="bg-inherit py-4 px-6 border-2" />
-                            </label>
-                            <label className="flex flex-col">
-                                <span className="px-2">Your Message</span>
-                                <textarea rows={7}  name="name" onChange={(e)=> SetText(e.target.value)} placeholder="What's your name?" className="bg-inherit py-4 px-6 border-2" />
-                            </label>
-                            <div className="mt-2">
-                                <button className="p-2 border-2" type="submit">Submit</button>
-                            </div>
-                        </form>
+                    <div className="h-[450px] w-[50%] border-2">
+                        <h1>There will be  a 3d asset</h1>
                     </div>
                 </div>
             </div>

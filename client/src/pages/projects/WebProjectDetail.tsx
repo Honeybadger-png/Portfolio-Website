@@ -39,20 +39,20 @@ const WebProjectDetail = () => {
     }
 
     return (
-      <div className="text-white mb-10">
+      <div className="text-slate-200 mb-10">
         <div className="flex justify-center h-[450px]">
           <ProjectCarousel images={project.images}>
 
           </ProjectCarousel>
         </div>
         <div className="flex justify-center">
-          <div className="flex justify-between w-[1200px]">
+          <div className="flex justify-between w-[1200px] mt-4">
             <div className="flex gap-2">
               {
                 project.usedTechnologies.map((tech)=> {
                   return(
-                    <div>
-                      <p className="text-primary">#{tech}</p>
+                    <div className="">
+                      <p className="p-2 border-2 border-neon-pink text-secondary rounded-md text-[24px]">{tech}</p>
                     </div>
                   )
                 })
@@ -61,7 +61,7 @@ const WebProjectDetail = () => {
             <div>
               {project.githubLink && (
                 <div>
-                  <a href={project.githubLink} className="text-[30px] text-primary">
+                  <a href={project.githubLink} className="text-[36px] text-primary">
                     <FaGithub />
                   </a>
                 </div>
@@ -70,7 +70,7 @@ const WebProjectDetail = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center mx-20 mt-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center text-neon-pink">
             <h1>{project.projectName}</h1>
           </div>
           <div>
@@ -81,7 +81,7 @@ const WebProjectDetail = () => {
                     {projectText.image && (
                       <img className="w-[600px] max-h-[350px] float-left p-4" src={projectText.image.url} alt="" />
                     )}
-                    <p>
+                    <p className="font-semibold text-[16px]">
                       {projectText.text[currentLanguage]}
                     </p>
                   </div>

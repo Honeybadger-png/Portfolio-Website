@@ -6,7 +6,7 @@ const SkillsCard = (props:propsType): JSX.Element => {
     const [isClicked, setIsClicked] = useState("");
     return (
         <div>
-            <motion.div className='border-2 border-cyber-orange justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name) : setIsClicked("")}>
+            <motion.div className='border-2 border-primary justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name) : setIsClicked("")}>
                 <h2>{props.skill.name}</h2>
             </motion.div>
             <AnimatePresence>
@@ -22,7 +22,7 @@ const SkillsCard = (props:propsType): JSX.Element => {
                             transition: {ease:"easeOut",duration:0.4}}} 
                         exit={{opacity:0,height:0, transition: {ease:"easeIn",duration:0.3}}}
                         >
-                            <div className=' grid grid-cols-3 gap-4 w-full border-2 border-t-0 border-cyber-orange'>
+                            <div className=' grid grid-cols-3 gap-4 w-full border-2 border-t-0 border-primary'>
                                 {
                                     props.skill.logos?.map((logo)=> (
                                         <div

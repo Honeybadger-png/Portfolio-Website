@@ -27,20 +27,28 @@ const ArtProjectDetail = () => {
     }
 
     return (
-        <div className="text-white">
-            <div className="flex justify-center">
+        <div className="text-white mt-10 mx-10">
+            <div className="flex justify-center text-secondary">
                 <h2>{artProject.projectName}</h2>
             </div>
             <div className="mb-10 flex gap-2">
                 <div className="h-[450px]">
                     <ProjectCarousel images={artProject.detailedImages} />
                 </div>
-                <div>
+                <div className="px-4">
                     <div>
                         {
                             artProject.summaryText[currentLanguage]
                         }
 
+                    </div>
+                    <div className="flex flex-col gap-4  mt-10">
+                        <h4>Used Software</h4>
+                        <div className="flex gap-2 flex-wrap">
+                            {
+                                artProject.usedSoftware.map((software)=> <p className="p-2 rounded-lg border-2 border-neon-pink text-secondary">{software}</p> )
+                            }
+                        </div>
                     </div>    
                 </div>            
             </div>

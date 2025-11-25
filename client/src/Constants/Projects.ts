@@ -17,7 +17,7 @@ export interface webProjectsType {
 export interface artProjectsType {
     id: number;
     projectName: string;
-    explanations: languageType[];
+    usedSoftware: string[];
     fileName?: string;
     mainImage: string;
     secondaryImage: string;
@@ -244,11 +244,7 @@ export const artProjectsData : artProjectsType [] = [
         fileName: "blabla",
         secondaryImage: "/projects/models/images/Stanley_Quencher_02.png",
         mainImage: "",
-        explanations: [{
-            en: "Blender",
-            tr: "",
-            jp: ""
-        }],
+        usedSoftware: ["Blender"],
         summaryText: 
             {
                 en: "I am big fan of Stanley thermos and I wanted to model it to showcase my workspace. I also tried new shadings while working on this project.",
@@ -270,11 +266,7 @@ export const artProjectsData : artProjectsType [] = [
         fileName: "blabla",
         secondaryImage: "/projects/models/images/asus_rog_pugio_2.png",
         mainImage: "",
-        explanations: [{
-            en: "Blender",
-            tr: "",
-            jp: ""
-        }],
+        usedSoftware: ["Blender"],
         summaryText: 
             {
                 en: "",
@@ -295,11 +287,7 @@ export const artProjectsData : artProjectsType [] = [
         fileName: "blabla",
         secondaryImage: "/projects/models/images/laptop_render.png",
         mainImage: "",
-        explanations: [{
-            en: "Blender",
-            tr: "",
-            jp: ""
-        }],
+        usedSoftware: ["Blender"],
         summaryText: 
             {
                 en: "",

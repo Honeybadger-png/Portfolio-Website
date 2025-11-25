@@ -12,7 +12,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
     const borderOption = current === (length -1) ? '' : 'border  border-t-0 ';
     return (
         <>
-        <div className={` border-x-2 ${borderOption} border-cyber-orange`} >
+        <div className={` border-x-2 ${borderOption} border-primary`} >
             <motion.div initial='initial' whileHover='hovered' className="relative block overflow-hidden whitespace-nowrap text-white py-2 ">
                 <motion.h1>
                     {/* main text */}
@@ -42,7 +42,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                 <AnimatePresence>
                     {
                         isClicked && (
-                            <motion.div key="content"  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-cyber-orange border-opacity-50 ">
+                            <motion.div key="content"  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-primary border-opacity-50 ">
                                 <ul className="list-disc text-lg p-4 justify-items-center  "> 
                                     {
                                         experience.texts.map((text,number)=>
