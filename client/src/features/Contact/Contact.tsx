@@ -1,12 +1,12 @@
 import { FaLinkedin } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
-import {toast, ToastContainer} from "react-toastify";
+
 import 'react-toastify/dist/ReactToastify.css';
 
 import { styles } from "../../styles"
 import { IconContext } from "react-icons";
 import './Contact.css';
-import { useState } from "react";
+
 import { getLanguage } from "../../Lib/lang";
 import { contactSectionData } from "../../Constants/Constants";
 
@@ -14,18 +14,6 @@ import { contactSectionData } from "../../Constants/Constants";
 const Contact = ()=>{
     const currentLanguage = getLanguage()
 
-    const [name,SetName] = useState('');
-    const [email,SetEmail] = useState('');
-    const [text,SetText] = useState('');
-    const [submitClicked, SetSubmitClicked] = useState(false);
-
-    const SubmitHandler = async(e: { preventDefault: () => void; }) => {
-        e.preventDefault();
-        SetSubmitClicked(true);
-        console.log(name,email,text);
-        return toast.error("I don't want to pay for mailgun, You can reach me with my E-mail adress and Linkedin.");
-
-    }
 
     return(
         <div className={`h-[70vh] ${styles.marginComponents}`} id="contact">
