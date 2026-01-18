@@ -32,7 +32,9 @@ const ProjectCarousel = ({images}:ProjectImagesProps) => {
                 {
                   images.map((image,index)=> (
                     index === currentIndex ? <div className="h-[16px] w-[16px] rounded-full bg-red-400"></div> :
-                    <div className="h-[16px] w-[16px] rounded-full bg-yellow-400"></div>
+                    <div className="h-[16px] w-[16px] rounded-full bg-yellow-400">
+                      <img src={image.url} alt="" />
+                    </div>
                   ))
                 }
               </div>

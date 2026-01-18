@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { artProjectsData } from "../../Constants/Projects";
-import { getLanguage } from "../../Lib/lang";
 import { Link } from "react-router-dom";
 
 const ArtProjects = () => {
