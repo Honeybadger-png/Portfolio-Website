@@ -5,9 +5,9 @@ import { propsType } from "../../features/skills/Skills";
 const SkillsCard = (props:propsType): JSX.Element => {
     const [isClicked, setIsClicked] = useState("");
     return (
-        <div>
-            <motion.div className='border-2 border-primary justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name) : setIsClicked("")}>
-                <h2>{props.skill.name}</h2>
+        <div className="w-[40vw]">
+            <motion.div className='border-2 p-4 border-primary justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name) : setIsClicked("")}>
+                <h2 className="text-4xl lg:text-6xl">{props.skill.name}</h2>
             </motion.div>
             <AnimatePresence>
             {
@@ -22,13 +22,13 @@ const SkillsCard = (props:propsType): JSX.Element => {
                             transition: {ease:"easeOut",duration:0.4}}} 
                         exit={{opacity:0,height:0, transition: {ease:"easeIn",duration:0.3}}}
                         >
-                            <div className=' grid grid-cols-3 gap-4 w-full border-2 border-t-0 border-primary'>
+                            <div className=' grid grid-cols-2  lg:grid-cols-3 gap-4 p-2 w-full border-2 border-t-0 border-primary'>
                                 {
                                     props.skill.logos?.map((logo)=> (
                                         <div
                                         key={logo.url} 
-                                        className=' h-20 w-20 p-2 justify-items-center content-center'>
-                                            <img className=''  src={logo.url} alt="" />
+                                        className='flex p-2 justify-items-center justify-center'>
+                                            <img className=' h-20  lg:h-28'  src={logo.url} alt="" />
                                         </div>
                                     ))
                                 }

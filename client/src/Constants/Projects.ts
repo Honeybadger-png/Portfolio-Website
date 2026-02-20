@@ -38,7 +38,6 @@ export interface Image{
 
 export interface projectText {
     text: languageType;
-    image?: Image;
 }
 
 
@@ -68,11 +67,6 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "Main Image",
-                        url: "/projects/web/MyLibrary/my-library-home-page.png"
-                    },
             },
             {
                 text: {
@@ -91,19 +85,15 @@ export const webProjects: webProjectsType[] = [
         ],
         images: [
             {
-                name: "deneme1",
-                url: ""
+                name: "main",
+                url: '/projects/web/MyLibrary/my-library-home-page.png'
             },
             {
-                name: "deneme2",
-                url: ""
-            },
-            {
-                name: "deneme3",
-                url: ""
+                name: "secondary",
+                url: '/projects/web/MyLibrary/my-library-home-page.png'
             },
         ],
-        githubLink: "asldkasjlkasd"
+        githubLink: "https://github.com/Honeybadger-png/my-library"
 
     },
     {
@@ -125,8 +115,8 @@ export const webProjects: webProjectsType[] = [
         ],
         images: [
             {
-                name: "deneme",
-                url: ""
+                name: "main",
+                url: "/projects/web/Microservice/docker.png"
             }
         ],
         projectTexts: [
@@ -136,11 +126,7 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "Main Image",
-                        url: "/projects/web/MyLibrary/my-library-home-page.png"
-                    },
+
             },
             {
                 text: {
@@ -148,11 +134,7 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "Library Tables",
-                        url: "there will be a image related to Library Section"
-                    },
+
             },
             {
                 text: {
@@ -160,11 +142,6 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "project introduction",
-                        url: "there will be a image related to final project"
-                    },
             },
         ]
 
@@ -188,9 +165,17 @@ export const webProjects: webProjectsType[] = [
         ],
         images: [
             {
-                name: "deneme",
-                url: ""
-            }
+                name: "main",
+                url: "/projects/web/parsley/sign_in_screen.png"
+            },
+            {
+                name: "main",
+                url: "/projects/web/parsley/main_and_detail.png"
+            },
+            {
+                name: "main",
+                url: "/projects/web/parsley/chatbot.png"
+            },
         ],
         projectTexts: [
             {
@@ -199,11 +184,7 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "project introduction",
-                        url: "there will be a image related to creation of a project"
-                    },
+
             },
             {
                 text: {
@@ -211,11 +192,7 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "project introduction",
-                        url: "there will be a image related to project development"
-                    },
+
             },
             {
                 text: {
@@ -223,11 +200,6 @@ export const webProjects: webProjectsType[] = [
                     tr: "",
                     jp: ""
                 },
-                image: 
-                    {
-                        name: "project introduction",
-                        url: "there will be a image related to final project"
-                    },
             },
         ]
 
@@ -243,7 +215,7 @@ export const artProjectsData : artProjectsType [] = [
         projectName: "Stanley Quencher",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/Stanley_Quencher_02.png",
-        mainImage: "",
+        mainImage: "/projects/models/images/stanley_quencher_vertical.png",
         usedSoftware: ["Blender"],
         summaryText: 
             {
@@ -254,8 +226,8 @@ export const artProjectsData : artProjectsType [] = [
         ,
         detailedImages: [
             {
-                name: "sdasd",
-                url: "sadsasa"
+                name: "main",
+                url: "/projects/models/images/stanley_quencher_vertical.png"
             }
         ]
 
@@ -265,8 +237,9 @@ export const artProjectsData : artProjectsType [] = [
         projectName: "Asus Rog Pugio II",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/asus_rog_pugio_2.png",
-        mainImage: "",
+        mainImage: "/projects/models/images/asus_mouse_vertical.png",
         usedSoftware: ["Blender"],
+
         summaryText: 
             {
                 en: "",
@@ -276,8 +249,8 @@ export const artProjectsData : artProjectsType [] = [
         ,
        detailedImages: [
             {
-                name: "sdasd",
-                url: "sadsasa"
+                name: "main",
+                url: "/projects/models/images/asus_mouse_vertical.png"
             }
         ]
     },
@@ -286,8 +259,9 @@ export const artProjectsData : artProjectsType [] = [
         projectName: "Laptop",
         fileName: "blabla",
         secondaryImage: "/projects/models/images/laptop_render.png",
-        mainImage: "",
+        mainImage: "/projects/models/images/laptop_vertical.png",
         usedSoftware: ["Blender"],
+
         summaryText: 
             {
                 en: "",
@@ -297,8 +271,8 @@ export const artProjectsData : artProjectsType [] = [
         ,
        detailedImages: [
             {
-                name: "sdasd",
-                url: "sadsasa"
+                name: "main",
+                url: "/projects/models/images/laptop_vertical.png"
             }
         ]
     },

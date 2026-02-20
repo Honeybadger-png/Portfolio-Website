@@ -40,8 +40,8 @@ const WebProjectDetail = () => {
 
     return (
       <div className="text-slate-200 mb-10">
-        <div className="flex justify-center h-[450px]">
-          <ProjectCarousel images={project.images}>
+        <div className="flex justify-center h-[450px] mt-10" >
+          <ProjectCarousel images={project.images} height="400">
 
           </ProjectCarousel>
         </div>
@@ -52,7 +52,7 @@ const WebProjectDetail = () => {
                 project.usedTechnologies.map((tech)=> {
                   return(
                     <div className="">
-                      <p className="p-2 border-2 border-neon-pink text-secondary rounded-md text-[24px]">{tech}</p>
+                      <p className="p-2  text-secondary rounded-md text-[24px]">#<span className="text-primary">{tech}</span></p>
                     </div>
                   )
                 })
@@ -61,7 +61,7 @@ const WebProjectDetail = () => {
             <div>
               {project.githubLink && (
                 <div>
-                  <a href={project.githubLink} className="text-[36px] text-primary">
+                  <a href={project.githubLink} className="text-[36px] text-primary" target="_blank" rel="noopener noreferrer">
                     <FaGithub />
                   </a>
                 </div>
@@ -78,9 +78,6 @@ const WebProjectDetail = () => {
               return(
                 <div className="flex">
                   <div className="pt-10">
-                    {projectText.image && (
-                      <img className="w-[600px] max-h-[350px] float-left p-4" src={projectText.image.url} alt="" />
-                    )}
                     <p className="font-semibold text-[16px]">
                       {projectText.text[currentLanguage]}
                     </p>

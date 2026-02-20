@@ -32,8 +32,8 @@ const ArtProjectDetail = () => {
                 <h2>{artProject.projectName}</h2>
             </div>
             <div className="mb-10 flex gap-2">
-                <div className="h-[450px]">
-                    <ProjectCarousel images={artProject.detailedImages} />
+                <div className="h-[550px]">
+                    <ProjectCarousel images={artProject.detailedImages} height="550" />
                 </div>
                 <div className="px-4">
                     <div>
@@ -46,7 +46,7 @@ const ArtProjectDetail = () => {
                         <h4>Used Software</h4>
                         <div className="flex gap-2 flex-wrap">
                             {
-                                artProject.usedSoftware.map((software)=> <p className="p-2 rounded-lg border-2 border-neon-pink text-secondary">{software}</p> )
+                                artProject.usedSoftware.map((software)=> <p className="p-2 rounded-lg text-primary">#<span className="text-secondary">{software}</span></p> )
                             }
                         </div>
                     </div>    

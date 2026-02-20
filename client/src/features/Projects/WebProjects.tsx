@@ -9,11 +9,11 @@ const WebProjects = () => {
     const currentLanguage = getLanguage();
 
     return(
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
             {
                 webProjects.map((webProject,index)=> {
                     return (
-                        <motion.div className="relative h-[300px] w-[540px] overflow-hidden" key={index}  whileHover="hovered" initial="initial">
+                        <motion.div className="relative h-[35vh] w-[28vw] overflow-hidden border-2 rounded-md" key={index}  whileHover="hovered" initial="initial">
                             <motion.div className="absolute inset-0" variants={{
                                     initial: {opacity:1,},
                                     hovered: {opacity: 0}
@@ -22,7 +22,7 @@ const WebProjects = () => {
                                 <motion.img className="h-full w-full object-contain" src={`${webProject.mainImage}`} alt="" 
                                  />
                             </motion.div>
-                            <motion.div className="absolute inset-0 " 
+                            <motion.div className="absolute inset-0 p-4" 
                             variants={{
                                 initial: {opacity:0},
                                 hovered: {opacity:1}
@@ -42,7 +42,7 @@ const WebProjects = () => {
                                     }
                                 </ul>
                                 <Link to={`/project/web/${webProject.id}`}>
-                                    <button className="absolute bottom-0 right-0 hover:text-primary">Details </button>
+                                    <button className="absolute bottom-0 right-0 p-2 hover:text-primary">Details </button>
                                 </Link>
                             </motion.div>
                         </motion.div>

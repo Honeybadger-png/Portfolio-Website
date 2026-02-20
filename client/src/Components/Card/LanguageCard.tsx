@@ -5,9 +5,9 @@ import { propsType } from "../../features/skills/Skills";
 const LanguageCard = (props:propsType): JSX.Element => {
     const [isClicked, setIsClicked] = useState("");
     return (
-        <div className='flex flex-col'>
-            <motion.div className='border-2 border-primary justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name): setIsClicked("")}>
-                <h2>{props.skill.name}</h2>
+        <div className='flex flex-col w-[40vw]'>
+            <motion.div className='border-2 p-4  border-primary justify-items-center cursor-pointer' onClick={()=> !isClicked ? setIsClicked(props.skill.name): setIsClicked("")}>
+                <h2 className="text-4xl lg:text-6xl">{props.skill.name}</h2>
             </motion.div>
             <AnimatePresence>
             {
@@ -25,7 +25,7 @@ const LanguageCard = (props:propsType): JSX.Element => {
                                         <div
                                         key={index} 
                                         className={`px-2 justify-items-start content-center ${index === (props.skill.languages?.length!-1) ? 'border-0' : "border-b-2 border-primary"}`}>
-                                            <h2>{language}</h2>
+                                            <h2 className="text-3xl lg:text-6xl">{language}</h2>
                                         </div>
                                     ))
                                 }

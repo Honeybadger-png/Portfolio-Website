@@ -51,7 +51,12 @@ export const experienceData: ExperienceComponent = {
             location: "Ankara",
             texts: [
                 {
-                    en: "During my internship, I had an opportunity to work on Frontend Development. I gained hands on experience PHP and Laravel.asdsadsadasdsadsadasdasdsadas",
+                    en: "During my internship, frontend was my responsibility. However, in some cases I had an oppurtunity to help backend operations with PHP and Laravel. I don't use php now but I like web development because of this internship I explored anything related to WEB after my internship.",
+                    tr: "",
+                    jp: ""
+                },
+                {
+                    en: "I started using vanila Javascript, Css and Html like almost every junior developer and I managed to understand and create user friendly, responsive , good looking webpages with references and feedbacks from both my co-workers and customers. For backend side, I mainly helped with easy tasks that consume time because I hadn't got any experience with PHP and Laravel but It was beneficial experience. ",
                     tr: "",
                     jp: ""
                 }
@@ -88,21 +93,8 @@ export const skills = [
             {
                 url: "logo/skills_logo/figma.png"
             },
-        ]
-    },
-    {
-        name: skillTypes.Game,
-        title: {
-            en: "Game",
-            tr: "Oyun",
-            jp: ""
-        },
-        logos: [
-            {
+                        {
                 url: "logo/skills_logo/blender.png"
-            },
-            {
-                url: "logo/skills_logo/unity.png"
             },
         ]
     },

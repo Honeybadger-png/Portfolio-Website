@@ -6,21 +6,24 @@ import { FaChevronRight } from "react-icons/fa";
 type ProjectImagesProps = {
     images: Image[];
 }
+interface ProjectCarouselProps extends ProjectImagesProps{
+  height: string;
+}
 
-const ProjectCarousel = ({images}:ProjectImagesProps) => {
+const ProjectCarousel = ({images,height}: ProjectCarouselProps) => {
       const [ currentIndex, setCurrentIndex] = useState(0);
       const width = 1200 + 16;
 
     return(
 
-          <div className="h-[400px] w-[1200px] relative">
+          <div className="w-[1200px] relative" >
               <div className="overflow-hidden h-full w-full ">
                 <div className="flex gap-4" style={{transform: `translateX(-${currentIndex * width}px)`}}>
                   {
                     images.map((image)=> {
                       return (
-                        <div className="h-[400px] w-[1200px] shrink-0">
-                          <img src={image.url} alt="" />
+                        <div className=" w-[1200px] shrink-0`" >
+                          <img className="w-full object-contain" style={{height: `${height}px`}} src={image.url} alt="" />
                         </div>
                       )
                     })
@@ -40,10 +43,14 @@ const ProjectCarousel = ({images}:ProjectImagesProps) => {
               </div>
 
               <div className="absolute top-[50%] left-0 text-primary" onClick={()=> setCurrentIndex((i)=> Math.max(i-1,0))}>
+                <div className="flex p-2 border-2 border-secondary rounded-full items-center">
                   <button className="text-[24px]"> <FaChevronLeft /></button>
+                </div>
               </div>
               <div className="absolute top-[50%] right-0  text-primary" onClick= {()=> setCurrentIndex((i)=> Math.min(i+1,images.length-1))}>
+                <div className="flex p-2 border-2 border-secondary rounded-full items-center">
                   <button className="text-[24px]"><FaChevronRight /></button>
+                </div>
               </div>
           </div>
     )

@@ -17,8 +17,8 @@ export type propsType = {
 const Skills = (props:propsType): JSX.Element => {
     return (
         <>
-            <div className={`h-auto`} key="content">
-                <div >
+            <div className={`h-auto w-full`} key="content">
+                <div className='w-full flex mt-4'>
                     {
                             props.skill.name !== "Language" ? (
                                 <SkillsCard skill={props.skill}  />
