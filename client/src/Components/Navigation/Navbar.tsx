@@ -1,9 +1,10 @@
 
 import './navbar.css'
-
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-
+  const location = useLocation();
+  const {pathname} = location;
   return (
     <>
       <div className="flex flex-row h-[10vh] justify-between w-full px-10 border-b-2 border-red-600">
@@ -21,9 +22,13 @@ const Navbar = () => {
             <li className="menu-item">
               <a href="/about">ABOUT</a>
             </li>
-            <li className="menu-item">
-              <a href="#projects">PROJECTS</a>
-            </li>
+            {
+              pathname === "/" ? (
+              <li className="menu-item">
+                <a href="/#projects">PROJECTS</a>
+              </li>
+              ) : null
+            }
           </ul>
         </div>
         <div className="md:hidden flex flex-1 justify-end items-center">
@@ -36,9 +41,6 @@ const Navbar = () => {
             </li>
             <li>
               <a href="/">PROEJCTS</a>
-            </li>
-            <li>
-              <a href="/">CONTACT</a>
             </li>
           </ul>
           </div>

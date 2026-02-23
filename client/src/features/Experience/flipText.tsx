@@ -23,8 +23,8 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                         hovered:{y:"-100%"}
                     }}>
                         <div className="flex flex-row justify-between">
-                            <h1>{experience.company}</h1>
-                            <h1>{experience.startDate}</h1>
+                            <h1 className="text-[5vw]">{experience.company}</h1>
+                            <h1 className="text-[4vw]">{experience.startDate}</h1>
                         </div>
                     </motion.div>
                     {/* replaced text */}
@@ -33,26 +33,28 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                         initial: {y:"100%"},
                         hovered:{y:0}
                     }} onClick={()=>setIsClicked(!isClicked)}  >
-                        <div className="flex flex-row justify-between">
-                            <h1>{experience.status[language]}</h1>
-                            <h1>{experience.location}</h1>
-                            <h1>{experience.endDate}</h1>
+                        <div className="flex flex-row justify-between text-[6vw]">
+                            <h1 className="text-[5vw]">{experience.status[language]}</h1>
+                            <h1 className="text-[5vw]">{experience.location}</h1>
+                            <h1 className="text-[4vw]">{experience.endDate}</h1>
                         </div>
                     </motion.div>
                 </motion.h1>
                 <AnimatePresence>
                     {
                         isClicked && (
-                            <motion.div key="content"  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-primary border-opacity-50 ">
-                                <ul className="flex flex-col gap-4 list-disc text-lg p-8  "> 
-                                    {
-                                        experience.texts.map((text,number)=>
-                                            <li key={number}  className="w-[60vw] h-full text-wrap">
-                                                <p>{text[language]}</p>
-                                            </li>
-                                        )
-                                    }
-                                </ul>
+                            <motion.div key="content"  initial={{opacity:0,height:0}} animate={{opacity:1,height:"auto"}} exit={{opacity:0,height:0}} className="border-t-[1px] border-primary border-opacity-50">
+                                <div className="p-8 w-[60vw]">
+                                    <ul className="flex flex-col gap-4 list-disc text-lg"> 
+                                        {
+                                            experience.texts.map((text,number)=>
+                                                <li key={number}  className=" h-full text-wrap">
+                                                    <p className="">{text[language]}</p>
+                                                </li>
+                                            )
+                                        }
+                                    </ul>
+                                </div>
                             </motion.div>
                         )
                     }

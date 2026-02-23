@@ -9,11 +9,11 @@ const WebProjects = () => {
     const currentLanguage = getLanguage();
 
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10">
+        <div className="grid grid-cols-1   xl:grid-cols-3 mt-10">
             {
                 webProjects.map((webProject,index)=> {
                     return (
-                        <motion.div className="relative h-[35vh] w-[28vw] overflow-hidden border-2 rounded-md" key={index}  whileHover="hovered" initial="initial">
+                        <motion.div className="relative h-[350px] w-[550px] xl:w-[28vw] overflow-hidden border-2 rounded-md" key={index}  whileHover="hovered" initial="initial">
                             <motion.div className="absolute inset-0" variants={{
                                     initial: {opacity:1,},
                                     hovered: {opacity: 0}

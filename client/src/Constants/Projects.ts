@@ -213,13 +213,13 @@ export const artProjectsData : artProjectsType [] = [
     {
         id:4,
         projectName: "Stanley Quencher",
-        fileName: "blabla",
+        fileName: "null",
         secondaryImage: "/projects/models/images/Stanley_Quencher_02.png",
         mainImage: "/projects/models/images/stanley_quencher_vertical.png",
         usedSoftware: ["Blender"],
         summaryText: 
             {
-                en: "I am big fan of Stanley thermos and I wanted to model it to showcase my workspace. I also tried new shadings while working on this project.",
+                en: "When I first decided to create my working table to display on the homepage. I was a big fan of stanley thermos and I created its model with the different colors I chose.",
                 tr: "",
                 jp: ""
             }
@@ -235,14 +235,14 @@ export const artProjectsData : artProjectsType [] = [
     {
         id:5,
         projectName: "Asus Rog Pugio II",
-        fileName: "blabla",
+        fileName: "null",
         secondaryImage: "/projects/models/images/asus_rog_pugio_2.png",
         mainImage: "/projects/models/images/asus_mouse_vertical.png",
         usedSoftware: ["Blender"],
 
         summaryText: 
             {
-                en: "",
+                en: "This is my mouse I am currently using and I like its design. Its a bit heavy for especially fps games but Asus logo and transparent body is cool.",
                 tr: "",
                 jp: ""
             }
@@ -257,14 +257,14 @@ export const artProjectsData : artProjectsType [] = [
     {
         id:6,
         projectName: "Laptop",
-        fileName: "blabla",
+        fileName: "null",
         secondaryImage: "/projects/models/images/laptop_render.png",
         mainImage: "/projects/models/images/laptop_vertical.png",
         usedSoftware: ["Blender"],
 
         summaryText: 
             {
-                en: "",
+                en: "Well this laptop is my friend for a lot of time she is getting old but I create models with this machine. Its brand is monster its not 100% same with the current laptop so I didn't put the brand name.",
                 tr: "",
                 jp: ""
             }

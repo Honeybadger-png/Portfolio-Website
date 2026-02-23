@@ -23,7 +23,10 @@ const Contact = ()=>{
             <div className={`${styles.marginComponents}`}>
                 <div className="flex gap-4 w-full">
                     <div className="w-[50%]">
-                        <h4>{contactSectionData.text[currentLanguage]}<span className="text-primary">{contactSectionData.mail}</span></h4>
+                        <div className="flex flex-col gap-2">
+                            <h4 className="text-[24px] lg:text-[36px]">{contactSectionData.text[currentLanguage]}</h4>
+                            <h3 className="text-primary text-[18px] lg:text-[26px]">{contactSectionData.mail}</h3>
+                        </div>
                         <IconContext.Provider value={{className: 'react-icons'}}>
                             <div className="flex flex-wrap p-4 gap-4">
                                 <div className="h-[10vh] w-[10vw]">
@@ -40,9 +43,8 @@ const Contact = ()=>{
                         </IconContext.Provider>
                         
                     </div>
-                    <div className="h-[450px] w-[50%] border-2">
-                        <h1>There will be  a 3d asset</h1>
-                    </div>
+                    {/* <div className="h-[450px] w-[50%] border-2">
+                    </div> */}
                 </div>
             </div>
         </div>

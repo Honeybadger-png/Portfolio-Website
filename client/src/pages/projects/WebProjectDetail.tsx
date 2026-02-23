@@ -78,7 +78,7 @@ const WebProjectDetail = () => {
               return(
                 <div className="flex">
                   <div className="pt-10">
-                    <p className="font-semibold text-[16px]">
+                    <p className="font-semibold text-[18px]">
                       {projectText.text[currentLanguage]}
                     </p>
                   </div>

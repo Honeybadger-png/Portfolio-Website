@@ -118,7 +118,7 @@ export const contactSectionData: ContactSection = {
     },
     mail: "mertgul1878@gmail.com",
     text: {
-        en: "I don't have a Mailgun subscription. But you can reach me with my email or my social media links.",
+        en: "You can always reach me anytime with my socials or my mail address.",
         tr: "",
         jp: ""
     }
@@ -126,11 +126,11 @@ export const contactSectionData: ContactSection = {
 
 export const aboutData: AboutType = {
     title: {
-        en: "Mert Gul | Frontend Developer and 3D Character Artist",
+        en: "Frontend Developer and 3D Character Artist",
         jp: "",
         tr: ""
     },
-    profileImg: "",
+    profileImg: "/selfie.jpg",
     texts: [
         {
             en: "Hi! I am a Computer Engineering student at Karabuk University seeking career as a Frontend Developer. I am still a student because I couldn't find an internship to get my degree for years. I am a curious person and I have passion for tech and I believe, that passion cost me to spend a lot of time on different topics and fields. After experiencing most of the fields and technologies I decided to focus on Web Development and I try to get better with my skills and I will always learn new things. I have also passion on 3D models and I try to showcase my models on my website. I like to sculpt in Blender as a hobby I find it very calming exercise. For Web Development, I mostly work with React because my projects are in small scale. I have tried Angular after getting a challenge for internship I find it useful for bigger projects. I have also learned Microservice architecture but I couldn't find chance to use the skills I learned so I focused on Frontend Development. I have still things to learn and master in Frontend Development and I want experience while doing it. So, If you are a someone who can help me find a job or internship my only intention is to gain experience and have fun while working in a team. I value about company culture and the atmosphere among the teammates. Yes, money is important but if I can't work proficient in the company that doesn't matter.",

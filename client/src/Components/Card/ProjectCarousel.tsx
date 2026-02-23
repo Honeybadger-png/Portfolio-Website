@@ -22,8 +22,8 @@ const ProjectCarousel = ({images,height}: ProjectCarouselProps) => {
                   {
                     images.map((image)=> {
                       return (
-                        <div className=" w-[1200px] shrink-0`" >
-                          <img className="w-full object-contain" style={{height: `${height}px`}} src={image.url} alt="" />
+                        <div className="flex items-center justify-center w-[1200px] shrink-0" >
+                          <img className=" object-contain" style={{height: `${height}px`}} src={image.url} alt="" />
                         </div>
                       )
                     })
