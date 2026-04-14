@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Outlet} from 'react-router-dom'
-import Navbar from './Components/Navigation/Navbar'
-import Loader from './Components/Loader/Loader'
+import Navbar from './components/navigation/Navbar'
+import Loader from './components/loader/Loader'
 import { preloadImages } from './utils/preLoadImages'
-
+import Footer from './components/footer/Footer'
 
 const imagesToLoad = [
   "/projects/models/images/asus_rog_pugio_2.png",
@@ -47,6 +47,7 @@ export default function App() {
     <div>
       <Navbar/>
       <Outlet />
+      <Footer />
     </div>
     </>
     

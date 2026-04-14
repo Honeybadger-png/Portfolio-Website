@@ -1,9 +1,9 @@
 import { styles } from "../../styles";
 import SkillsCard from "../skills/Skills";
 import './Introduction.css';
-import { skills } from "../../Constants/Constants";
+import { skills } from "../../constants/Constants";
 import { getLanguage } from "../../Lib/lang";
-import { introductionContent } from "../../Content/introductionContent";
+import { introductionContent } from "../../content/introductionContent";
 
 const Introduction = ()=>{
     const language = getLanguage();
@@ -13,7 +13,7 @@ const Introduction = ()=>{
         <div className={` h-full lg:h-[60vh] ${styles.marginComponents} flex`}>
             <div className="introduction">
                 <div className="flex w-full flex-row gap-10">
-                    <div className="flex flex-col w-[60vw] p-4">
+                    <div className="flex flex-col w-[60vw] p-4 gap-8">
                         <div className="">
                             <h3 className="text-secondary  text-xl md:text-2xl   lg:text-4xl">{introductionContent.section[language]}</h3>
                         </div>

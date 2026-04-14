@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
-import { webProjects } from "../../Constants/Projects";
+import { webProjects } from "../../constants/Projects";
 import { useEffect, useState } from "react";
 import { getLanguage } from "../../Lib/lang";
 import { FaGithub } from "react-icons/fa";
-import ProjectCarousel from "../../Components/Card/ProjectCarousel";
+import ProjectCarousel from "../../components/card/ProjectCarousel";
 
 
 
@@ -78,7 +78,12 @@ const WebProjectDetail = () => {
               return(
                 <div className="flex">
                   <div className="pt-10">
-                    <p className="font-semibold text-[18px]">
+                    {
+                      projectText.title ? (
+                        <h2 className="text-secondary">{projectText.title}</h2>
+                      ) : null
+                    }
+                    <p className="font-semibold text-[18px] font-sans">
                       {projectText.text[currentLanguage]}
                     </p>
                   </div>

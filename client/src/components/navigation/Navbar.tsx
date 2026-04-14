@@ -7,7 +7,7 @@ const Navbar = () => {
   const {pathname} = location;
   return (
     <>
-      <div className="flex flex-row h-[10vh] justify-between w-full px-10 border-b-2 border-red-600">
+      <div className="flex flex-row h-[10vh] justify-between w-full px-10 border-b-2 border-red-600 font-audiowide">
         <div className="flex flex-row">
           {/* Logo */}
           <div className="h-full content-center justify-items-center pl-2">
