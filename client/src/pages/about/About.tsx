@@ -1,5 +1,5 @@
-import { getLanguage } from "../../Lib/lang"
-import { aboutData } from "../../Constants/Constants";
+import { getLanguage } from "../../lib/lang"
+import { aboutData } from "../../constants/Constants";
 
 const About = () =>{
     const currentLang = getLanguage();
@@ -15,7 +15,7 @@ const About = () =>{
                         <img className="w-[480px] h-[350px] object-contain float-left" src={aboutData.profileImg} alt="" />
                     </div>
                     {
-                        aboutData.texts.map((text,index) =>{
+                        aboutData.texts.map((text:{[key:string]:string},index:number) =>{
                             return(
 
                                     <p className="text-white text-[18px] mb-10 pr-10" key={index}>

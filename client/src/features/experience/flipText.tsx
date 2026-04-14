@@ -1,7 +1,7 @@
 import {AnimatePresence, motion} from "framer-motion";
 import { useState } from "react";
-import { ExperienceType } from "../../Constants/Constants";
-import { getLanguage } from "../../Lib/lang";
+import { ExperienceType } from "../../constants/Constants";
+import { getLanguage } from "../../lib/lang";
 
 
 
@@ -47,7 +47,7 @@ const FlipText = ({experience,current,length}:{experience:ExperienceType,current
                                 <div className="p-8 w-[60vw]">
                                     <ul className="flex flex-col gap-4 list-disc text-lg"> 
                                         {
-                                            experience.texts.map((text,number)=>
+                                            experience.texts.map((text:{[key:string]:string},number:number)=>
                                                 <li key={number}  className=" h-full text-wrap">
                                                     <p className="">{text[language]}</p>
                                                 </li>

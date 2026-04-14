@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import ProjectCarousel from "../../Components/Card/ProjectCarousel";
-import { artProjectsData } from "../../Constants/Projects";
-import { getLanguage } from "../../Lib/lang";
+import ProjectCarousel from "../../components/card/ProjectCarousel";
+import { artProjectsData } from "../../constants/Projects";
+import { getLanguage } from "../../lib/lang";
 import { useEffect, useState } from "react";
 
 
@@ -20,7 +20,7 @@ const ArtProjectDetail = () => {
         }
     },[id])
 
-    const artProject = artProjectsData.find(p => p.id === projectId);
+    const artProject = artProjectsData.find((p:any) => p.id === projectId);
 
     if(!artProject){
         return <h2>Error: Project not found</h2>
@@ -46,7 +46,7 @@ const ArtProjectDetail = () => {
                         <h4 className="text-secondary">Used Software</h4>
                         <div className="flex gap-2 flex-wrap">
                             {
-                                artProject.usedSoftware.map((software)=> <p className="p-2 rounded-lg text-secondary text-[18px]">#<span className="text-neon-pink">{software}</span></p> )
+                                artProject.usedSoftware.map((software:any)=> <p className="p-2 rounded-lg text-secondary text-[18px]">#<span className="text-neon-pink">{software}</span></p> )
                             }
                         </div>
                     </div>    
