@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { webProjects } from "../../constants/Projects";
-import { getLanguage } from "../../Lib/lang";
+import { getLanguage } from "../../lib/lang";
 import { Link } from "react-router-dom";
 
 

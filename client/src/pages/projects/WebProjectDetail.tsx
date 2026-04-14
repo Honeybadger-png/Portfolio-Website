@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { webProjects } from "../../constants/Projects";
 import { useEffect, useState } from "react";
-import { getLanguage } from "../../Lib/lang";
+import { getLanguage } from "../../lib/lang";
 import { FaGithub } from "react-icons/fa";
 import ProjectCarousel from "../../components/card/ProjectCarousel";
 

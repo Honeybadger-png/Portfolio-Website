@@ -1,4 +1,4 @@
-import { languageType } from "../Lib/lang";
+import { languageType } from "../lib/lang";
 
 enum skillTypes {
     Web = "Web",

@@ -1,7 +1,7 @@
 import './Skills.css';
-import LanguageCard from '../../Components/Card/LanguageCard';
-import SkillsCard from '../../Components/Card/SkillsCard';
-import { languageType } from '../../Lib/lang';
+import LanguageCard from '../../components/card/LanguageCard';
+import SkillsCard from '../../components/card/SkillsCard';
+import { languageType } from '../../lib/lang';
 
 export type propsType = {
     skill: {
