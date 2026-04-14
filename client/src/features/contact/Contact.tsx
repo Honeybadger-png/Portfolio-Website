@@ -7,8 +7,8 @@ import { styles } from "../../styles"
 import { IconContext } from "react-icons";
 import './Contact.css';
 
-import { getLanguage } from "../../Lib/lang";
-import { contactSectionData } from "../../Constants/Constants";
+import { getLanguage } from "../../lib/lang";
+import { contactSectionData } from "../../constants/Constants";
 
 
 const Contact = ()=>{

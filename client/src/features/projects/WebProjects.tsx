@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { webProjects } from "../../Constants/Projects";
-import { getLanguage } from "../../Lib/lang";
+import { webProjects } from "../../constants/Projects";
+import { getLanguage } from "../../lib/lang";
 import { Link } from "react-router-dom";
 
 
@@ -13,7 +13,7 @@ const WebProjects = () => {
             {
                 webProjects.map((webProject,index)=> {
                     return (
-                        <motion.div className="relative h-[350px] w-[550px] xl:w-[28vw] overflow-hidden border-2 rounded-md" key={index}  whileHover="hovered" initial="initial">
+                        <motion.div className="relative h-[350px] w-[550px] xl:w-[28vw] overflow-hidden border-2 rounded-md bg-slate-700 bg-opacity-10 backdrop-blur-md " key={index}  whileHover="hovered" initial="initial">
                             <motion.div className="absolute inset-0" variants={{
                                     initial: {opacity:1,},
                                     hovered: {opacity: 0}
@@ -29,7 +29,7 @@ const WebProjects = () => {
                             }}
                             transition={{duration:0.5}}>
                                 <h3 className="text-neon-pink pb-2">{webProject.projectName}</h3>
-                                <p className="text-[12px] text-ellipsis line-clamp-8 pb-2">{webProject.summary[currentLanguage]}</p>
+                                <p className="text-[16px] text-ellipsis line-clamp-6 pb-2 font-sans">{webProject.summary[currentLanguage]}</p>
                                 <ul className="flex flex-row flex-wrap gap-2">
                                     {
                                         webProject.usedTechnologies.map((tag, index)=> {

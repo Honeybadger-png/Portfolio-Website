@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Image } from "../../Constants/Projects";
+import { Image } from "../../constants/Projects";
 import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 

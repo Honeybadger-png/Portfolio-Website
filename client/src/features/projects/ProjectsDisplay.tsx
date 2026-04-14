@@ -2,7 +2,7 @@ import WebProjects from "./WebProjects";
 import ArtProjects from "./ArtProjects";
 import { styles } from "../../styles"
 import "./Projects.css";
-import { getLanguage, languageType } from "../../Lib/lang";
+import { getLanguage, languageType } from "../../lib/lang";
 
 const projectTitle: languageType = {
     en: "Projects",

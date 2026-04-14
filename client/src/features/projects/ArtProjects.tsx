@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { artProjectsData } from "../../Constants/Projects";
+import { artProjectsData } from "../../constants/Projects";
 import { Link } from "react-router-dom";
 
 const ArtProjects = () => {
 
    
     return(
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 ">
             {
                 artProjectsData.map((artProject,index)=> {
                     return (
@@ -25,6 +25,7 @@ const ArtProjects = () => {
                                 hovered: {opacity:0.5} }} 
                             transition={{duration:0.5}}>
                                 <h4 className="text-secondary">{artProject.projectName}</h4>
+                                <h4 className="text-secondary font-mono">Polycount: {artProject.polycount}</h4>
                                 <ul className="flex flex-row flex-wrap gap-2">
                                     {
                                         artProject.usedSoftware.map((tag, index)=> {
